@@ -1,0 +1,1687 @@
+{
+  "catalogue": {
+    "id": "0f2d-567b-9b1a-e415",
+    "name": "Blades of Khorne",
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "library": false,
+    "gameSystemId": "e1c7-e246-3b41-c857",
+    "gameSystemRevision": 2,
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "sharedSelectionEntries": [
+      {
+        "id": "b318-6cdf-92bc-5bf8",
+        "name": "Blades of Khorne: Battle Traits, Formations & Lores",
+        "type": "upgrade",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "id": "ceb8-1496-502a-7c4d",
+            "name": "Army Composition",
+            "primary": true,
+            "targetId": "c64e-e255-9117-75bc"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Blood Tithe",
+            "id": "5557-8d56-5542-01c5",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Any Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Gain Blood Tithe points when units are destroyed.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "id": "90de-0f25-56f6-a08d",
+            "name": "Battle Formations",
+            "constraints": [
+              {
+                "id": "1de5-f830-04c3-2808",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "9b03-d657-d9ef-f88b",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "id": "5f3a-c151-c84d-b013",
+                "name": "Bloodbound Warhorde",
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Bloodbound Warhorde",
+                    "id": "bfac-1f3e-1868-f20f",
+                    "hidden": false,
+                    "typeId": "3242-704e-a559-9242",
+                    "typeName": "Ability (Passive)",
+                    "characteristics": [
+                      {
+                        "name": "Effect",
+                        "$text": "Add 1 to wound rolls for charging Bloodbound units.",
+                        "typeId": "ff88-605f-94a1-be72"
+                      },
+                      {
+                        "name": "Keywords",
+                        "$text": "-",
+                        "typeId": "76ca-c834-2c5c-b178"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "3ed3-2be4-9870-fe86",
+                "name": "Murderhost",
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Murderhost",
+                    "id": "31fd-2578-0fb8-5b15",
+                    "hidden": false,
+                    "typeId": "3242-704e-a559-9242",
+                    "typeName": "Ability (Passive)",
+                    "characteristics": [
+                      {
+                        "name": "Effect",
+                        "$text": "Add 2 inches to Move for Khorne Daemon units.",
+                        "typeId": "ff88-605f-94a1-be72"
+                      },
+                      {
+                        "name": "Keywords",
+                        "$text": "-",
+                        "typeId": "76ca-c834-2c5c-b178"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "a1e7-1473-4bca-2cc5",
+                "name": "Brass Stampede",
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Brass Stampede",
+                    "id": "3e21-57db-0fdd-6e8e",
+                    "hidden": false,
+                    "typeId": "3242-704e-a559-9242",
+                    "typeName": "Ability (Passive)",
+                    "characteristics": [
+                      {
+                        "name": "Effect",
+                        "$text": "Skullcrushers and Bloodcrushers deal D3 mortal damage on charge.",
+                        "typeId": "ff88-605f-94a1-be72"
+                      },
+                      {
+                        "name": "Keywords",
+                        "$text": "-",
+                        "typeId": "76ca-c834-2c5c-b178"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f6e1-199e-ded9-d5a9",
+                "name": "Khornate Legion",
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Khornate Legion",
+                    "id": "46d2-630e-3c9c-f712",
+                    "hidden": false,
+                    "typeId": "3242-704e-a559-9242",
+                    "typeName": "Ability (Passive)",
+                    "characteristics": [
+                      {
+                        "name": "Effect",
+                        "$text": "Synergizes Mortal and Daemon units.",
+                        "typeId": "ff88-605f-94a1-be72"
+                      },
+                      {
+                        "name": "Keywords",
+                        "$text": "-",
+                        "typeId": "76ca-c834-2c5c-b178"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "eeb2-1bb6-c327-f4fd",
+            "name": "Faction Spell / Prayer Lore",
+            "constraints": [
+              {
+                "id": "6b62-04d5-cf1f-e092",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "id": "e5e8-67a8-9f7d-6bfc",
+                "name": "Blood Blessings of Khorne: Bronzed Flesh",
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Bronzed Flesh",
+                    "id": "5941-ecfb-f7db-3795",
+                    "hidden": false,
+                    "typeId": "8c87-9d5c-e381-aa12",
+                    "typeName": "Ability (Spell / Prayer)",
+                    "characteristics": [
+                      {
+                        "name": "Timing",
+                        "$text": "Your Hero Phase",
+                        "typeId": "010a-32e4-bfd1-7ecb"
+                      },
+                      {
+                        "name": "Value",
+                        "$text": "4",
+                        "typeId": "b16b-b0ee-9fbc-e044"
+                      },
+                      {
+                        "name": "Declare",
+                        "$text": "-",
+                        "typeId": "e949-67d2-ea72-a995"
+                      },
+                      {
+                        "name": "Effect",
+                        "$text": "Target friendly Khorne unit within 16 inches gains +1 to save.",
+                        "typeId": "8f30-b5f7-2014-976b"
+                      },
+                      {
+                        "name": "Keywords",
+                        "$text": "Spell / Prayer",
+                        "typeId": "c7c5-4969-f346-2a95"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "id": "4534-88e6-8d71-0aea",
+            "name": "Path to Glory: Glory Points Tracker",
+            "type": "upgrade",
+            "costs": [
+              {
+                "name": "Glory Points",
+                "typeId": "081b-52dd-5c11-94a7",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "3213-cb43-3b68-bd72",
+        "name": "Skull Altar",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "3ab3-d3ff-3eb7-7d60",
+            "name": "FACTION TERRAIN",
+            "primary": true,
+            "targetId": "dc04-3038-d16a-67d3"
+          },
+          {
+            "id": "6319-4b63-cb3a-b2c4",
+            "name": "CHAOS",
+            "primary": false,
+            "targetId": "8fdf-edc4-a529-ac84"
+          },
+          {
+            "id": "031f-2c30-e04b-4e75",
+            "name": "BLADES OF KHORNE",
+            "primary": false,
+            "targetId": "07b9-82fd-1647-9a20"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Skull Altar",
+            "id": "9258-5ff3-3f86-ac53",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "-",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "10",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "4+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "-",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Skull Altar",
+            "id": "b829-98fb-2f09-c7f3",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Grants +1 chanting to Khorne Priests within 8 inches.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "e1d4-df12-536f-be00",
+        "name": "Skarbrand",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 470
+          },
+          {
+            "name": "Glory Points",
+            "typeId": "081b-52dd-5c11-94a7",
+            "value": 0
+          },
+          {
+            "name": "Renown",
+            "typeId": "4f86-086d-1024-4741",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "88fd-d0ce-0f25-8a4d",
+            "name": "HERO",
+            "hidden": false,
+            "primary": true,
+            "targetId": "e5af-857d-36f1-e87b"
+          },
+          {
+            "id": "3170-85f8-2e19-234d",
+            "name": "MONSTER",
+            "hidden": false,
+            "primary": false,
+            "targetId": "28d2-8b6e-8b12-0ef4"
+          },
+          {
+            "id": "07e5-236e-73c4-1842",
+            "name": "UNIQUE",
+            "hidden": false,
+            "primary": false,
+            "targetId": "c7a0-dab2-f79f-5b95"
+          },
+          {
+            "id": "50ed-ee4c-41d3-54fd",
+            "name": "CHAOS",
+            "hidden": false,
+            "primary": false,
+            "targetId": "8fdf-edc4-a529-ac84"
+          },
+          {
+            "id": "1d70-7dd5-f411-f625",
+            "name": "BLADES OF KHORNE",
+            "hidden": false,
+            "primary": false,
+            "targetId": "07b9-82fd-1647-9a20"
+          },
+          {
+            "id": "d870-3db3-bd6c-c2d0",
+            "name": "DAEMON",
+            "hidden": false,
+            "primary": false,
+            "targetId": "a72e-8c6c-0869-6839"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Skarbrand",
+            "id": "7e75-fc0a-bbe8-71d7",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "8\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "16",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "4+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "5",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "-",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Slaughter and Carnage",
+            "id": "30a5-c9c0-198c-96e1",
+            "hidden": false,
+            "typeId": "efc5-2391-d26b-1c01",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {
+                "name": "Atk",
+                "$text": "8",
+                "typeId": "725f-6651-a0d6-fb39"
+              },
+              {
+                "name": "Hit",
+                "$text": "3+",
+                "typeId": "5f8d-d581-a1f2-3a03"
+              },
+              {
+                "name": "Wnd",
+                "$text": "2+",
+                "typeId": "97dd-480b-0b3d-31ba"
+              },
+              {
+                "name": "Rnd",
+                "$text": "2",
+                "typeId": "fa46-7896-faa6-ddbf"
+              },
+              {
+                "name": "Dmg",
+                "$text": "3",
+                "typeId": "50b7-706c-f3cf-8240"
+              },
+              {
+                "name": "Ability",
+                "$text": "Crit (Mortal)",
+                "typeId": "a75e-caea-4e00-ec11"
+              }
+            ]
+          },
+          {
+            "name": "Total Carnage",
+            "id": "57e9-7b64-dc97-d013",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Devastating melee output.",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "None",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "id": "5899-9174-23c2-4851",
+            "name": "General",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "6b30-cb78-b505-0371",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [],
+        "modifiers": []
+      },
+      {
+        "id": "6c29-fb6f-e732-2180",
+        "name": "Bloodletters",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 200
+          },
+          {
+            "name": "Glory Points",
+            "typeId": "081b-52dd-5c11-94a7",
+            "value": 0
+          },
+          {
+            "name": "Renown",
+            "typeId": "4f86-086d-1024-4741",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "97be-a8b4-84df-5ce1",
+            "name": "INFANTRY",
+            "hidden": false,
+            "primary": true,
+            "targetId": "cd23-b747-351e-8bfa"
+          },
+          {
+            "id": "a9bc-d3d9-f5b5-5d04",
+            "name": "CHAOS",
+            "hidden": false,
+            "primary": false,
+            "targetId": "8fdf-edc4-a529-ac84"
+          },
+          {
+            "id": "8b70-400d-5047-2264",
+            "name": "BLADES OF KHORNE",
+            "hidden": false,
+            "primary": false,
+            "targetId": "07b9-82fd-1647-9a20"
+          },
+          {
+            "id": "a555-ef16-5a0c-10c3",
+            "name": "DAEMON",
+            "hidden": false,
+            "primary": false,
+            "targetId": "a72e-8c6c-0869-6839"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Bloodletters",
+            "id": "8dcb-19a6-d3f5-98ba",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "6\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "2",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "5+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "1",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "-",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Hellblade",
+            "id": "fecf-4b91-73d0-05dc",
+            "hidden": false,
+            "typeId": "efc5-2391-d26b-1c01",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {
+                "name": "Atk",
+                "$text": "2",
+                "typeId": "725f-6651-a0d6-fb39"
+              },
+              {
+                "name": "Hit",
+                "$text": "3+",
+                "typeId": "5f8d-d581-a1f2-3a03"
+              },
+              {
+                "name": "Wnd",
+                "$text": "3+",
+                "typeId": "97dd-480b-0b3d-31ba"
+              },
+              {
+                "name": "Rnd",
+                "$text": "1",
+                "typeId": "fa46-7896-faa6-ddbf"
+              },
+              {
+                "name": "Dmg",
+                "$text": "1",
+                "typeId": "50b7-706c-f3cf-8240"
+              },
+              {
+                "name": "Ability",
+                "$text": "Crit (Mortal)",
+                "typeId": "a75e-caea-4e00-ec11"
+              }
+            ]
+          },
+          {
+            "name": "Decapitating Blow",
+            "id": "f1eb-5240-e7a0-21c4",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Crit (Mortal) on 5+ when charging.",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "None",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "id": "e0c4-4340-9be6-4a11",
+            "name": "Reinforced",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "7c0b-f1b1-3b24-554f",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "id": "1b5a-4d02-d0a4-2398",
+            "name": "Path to Glory (Paths, Renown & Battle Scars)",
+            "hidden": false,
+            "collapsible": true,
+            "selectionEntries": [
+              {
+                "id": "fae0-8d02-88b6-c252",
+                "name": "Renown Points",
+                "type": "upgrade",
+                "costs": [
+                  {
+                    "name": "Renown",
+                    "typeId": "4f86-086d-1024-4741",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "id": "0e09-a2b4-60f3-f0f1",
+                "name": "Battle Wounds / Battle Scars",
+                "type": "upgrade"
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "id": "e5ca-4335-ae38-0da9",
+                "name": "Unit Path",
+                "constraints": [
+                  {
+                    "id": "6a15-7f85-467d-41ed",
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent"
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "id": "12f1-1267-c3a9-f058",
+                    "name": "Path of the Warrior",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Path of the Warrior",
+                        "id": "0e09-15e0-5049-98e6",
+                        "hidden": false,
+                        "typeId": "3242-704e-a559-9242",
+                        "typeName": "Ability (Passive)",
+                        "characteristics": [
+                          {
+                            "name": "Effect",
+                            "$text": "Aspiring -> Elite -> Mighty -> Legendary",
+                            "typeId": "ff88-605f-94a1-be72"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "-",
+                            "typeId": "76ca-c834-2c5c-b178"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "id": "91d2-3467-ba50-1540",
+                        "name": "Rank: Aspiring",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "8f46-7548-a5b0-cd8b",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "984c-8dcf-46e0-c9eb",
+                        "name": "Rank: Elite",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "88a7-f352-314e-c2e0",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "4fd9-810e-4594-0393",
+                        "name": "Rank: Mighty",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "b167-1d49-fa2d-f3f4",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "6372-7e54-ddef-49a1",
+                        "name": "Rank: Legendary",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "0c83-5234-9efa-9080",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "e811-47ff-29cc-ef4f",
+                    "name": "Path of the Cavalier",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Path of the Cavalier",
+                        "id": "ba23-d6b6-fa37-cb89",
+                        "hidden": false,
+                        "typeId": "3242-704e-a559-9242",
+                        "typeName": "Ability (Passive)",
+                        "characteristics": [
+                          {
+                            "name": "Effect",
+                            "$text": "Aspiring -> Elite -> Mighty -> Legendary",
+                            "typeId": "ff88-605f-94a1-be72"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "-",
+                            "typeId": "76ca-c834-2c5c-b178"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "id": "b222-3982-1333-6567",
+                        "name": "Rank: Aspiring",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "ebfc-3107-6b4b-dafc",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "946e-8fe5-1a69-be25",
+                        "name": "Rank: Elite",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "731f-d1f2-52f5-e227",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "5d40-729e-6d1d-928e",
+                        "name": "Rank: Mighty",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "692f-8cbb-3949-0d9c",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "635b-1794-0998-4475",
+                        "name": "Rank: Legendary",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "0d38-918c-9e48-efdf",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "71a4-8dac-2d4d-8a09",
+                    "name": "Path of the Behemoth / Sentinel",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Path of the Behemoth / Sentinel",
+                        "id": "4661-078f-2a4e-a480",
+                        "hidden": false,
+                        "typeId": "3242-704e-a559-9242",
+                        "typeName": "Ability (Passive)",
+                        "characteristics": [
+                          {
+                            "name": "Effect",
+                            "$text": "Aspiring -> Elite -> Mighty -> Legendary",
+                            "typeId": "ff88-605f-94a1-be72"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "-",
+                            "typeId": "76ca-c834-2c5c-b178"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "id": "0e63-5e4b-1bea-5a4d",
+                        "name": "Rank: Aspiring",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "cbc4-af21-4aa1-0ad0",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "41db-7111-16e0-e167",
+                        "name": "Rank: Elite",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "efd0-ae66-0655-89b1",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "d16a-3d48-7c99-70e8",
+                        "name": "Rank: Mighty",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "ac5a-5940-767e-9742",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "8291-d15d-c345-a0d1",
+                        "name": "Rank: Legendary",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "f482-d461-bff6-ae10",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "d301-e717-9aaa-260e",
+                    "name": "Path of Blades of Khorne Glory",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Path of Blades of Khorne Glory",
+                        "id": "94cc-b50b-6203-30ff",
+                        "hidden": false,
+                        "typeId": "3242-704e-a559-9242",
+                        "typeName": "Ability (Passive)",
+                        "characteristics": [
+                          {
+                            "name": "Effect",
+                            "$text": "Aspiring -> Elite -> Mighty -> Legendary",
+                            "typeId": "ff88-605f-94a1-be72"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "-",
+                            "typeId": "76ca-c834-2c5c-b178"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "id": "6174-ae75-4e58-081f",
+                        "name": "Rank: Aspiring",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "abe6-3e0d-dbd7-fe87",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "3155-a0a9-e64d-8db0",
+                        "name": "Rank: Elite",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "7952-d3e7-89d8-e741",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "60ed-744c-4063-6878",
+                        "name": "Rank: Mighty",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "aee9-d18f-6f80-33dd",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "0253-a864-e44a-3bba",
+                        "name": "Rank: Legendary",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "5120-3247-3459-af07",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "df1c-9cfa-2ada-6b99",
+            "type": "multiply",
+            "value": 2,
+            "conditions": [
+              {
+                "childId": "e0c4-4340-9be6-4a11",
+                "field": "selections",
+                "scope": "self",
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1524-5250-73d3-0901",
+        "name": "Anvil of Apotheosis: Blades of Khorne Hero",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          },
+          {
+            "name": "Destiny Points",
+            "typeId": "fefc-3569-91a5-f501",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "ed24-79c8-f417-cad0",
+            "name": "HERO",
+            "primary": true,
+            "targetId": "e5af-857d-36f1-e87b"
+          },
+          {
+            "id": "14dc-7b7f-cf4a-00ee",
+            "name": "CHAOS",
+            "primary": false,
+            "targetId": "8fdf-edc4-a529-ac84"
+          },
+          {
+            "id": "078e-c3a8-7b5d-a8b4",
+            "name": "BLADES OF KHORNE",
+            "primary": false,
+            "targetId": "07b9-82fd-1647-9a20"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Anvil of Apotheosis: Blades of Khorne Hero",
+            "id": "6975-f986-d1bc-ac7e",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "5\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "5",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "4+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "2",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "-",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "id": "00d4-8f60-2a64-4983",
+            "name": "Destiny Point Limit",
+            "constraints": [
+              {
+                "id": "425c-94e2-9480-20a3",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "c1a8-1c7c-ccaa-4174",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "id": "6745-a0c4-a6c2-a04a",
+                "name": "Aspiring Champion (15 Destiny Pts / 120 pts)",
+                "type": "upgrade",
+                "costs": [
+                  {
+                    "name": "pts",
+                    "typeId": "df1c-9cfa-2ada-6b99",
+                    "value": 120
+                  }
+                ]
+              },
+              {
+                "id": "5958-a188-8acd-bd98",
+                "name": "Aspiring Lord (25 Destiny Pts / 200 pts)",
+                "type": "upgrade",
+                "costs": [
+                  {
+                    "name": "pts",
+                    "typeId": "df1c-9cfa-2ada-6b99",
+                    "value": 200
+                  }
+                ]
+              },
+              {
+                "id": "8255-b503-5d4a-f668",
+                "name": "Exalted Lord (35 Destiny Pts / 300 pts)",
+                "type": "upgrade",
+                "costs": [
+                  {
+                    "name": "pts",
+                    "typeId": "df1c-9cfa-2ada-6b99",
+                    "value": 300
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "6f61-7886-bfe4-7e96",
+            "name": "Path to Glory (Paths, Renown & Battle Scars)",
+            "hidden": false,
+            "collapsible": true,
+            "selectionEntries": [
+              {
+                "id": "98b1-4306-03db-f12f",
+                "name": "Renown Points",
+                "type": "upgrade",
+                "costs": [
+                  {
+                    "name": "Renown",
+                    "typeId": "4f86-086d-1024-4741",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "id": "bdaa-484c-672e-4cb6",
+                "name": "Battle Wounds / Battle Scars",
+                "type": "upgrade"
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "id": "a126-2396-e396-4efa",
+                "name": "Unit Path",
+                "constraints": [
+                  {
+                    "id": "33b9-5b61-d3ba-7da7",
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent"
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "id": "f28c-7cce-4c44-0f0e",
+                    "name": "Path of the Leader",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Path of the Leader",
+                        "id": "9bca-e3cd-c839-0940",
+                        "hidden": false,
+                        "typeId": "3242-704e-a559-9242",
+                        "typeName": "Ability (Passive)",
+                        "characteristics": [
+                          {
+                            "name": "Effect",
+                            "$text": "Aspiring -> Elite -> Mighty -> Legendary",
+                            "typeId": "ff88-605f-94a1-be72"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "-",
+                            "typeId": "76ca-c834-2c5c-b178"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "id": "1310-ca02-5755-63fc",
+                        "name": "Rank: Aspiring",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "6116-981a-14e7-bb96",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "8c32-b65d-fd97-d956",
+                        "name": "Rank: Elite",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "01eb-303c-adb6-281e",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "abf0-c9cb-8b59-eee9",
+                        "name": "Rank: Mighty",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "37b4-02b0-becf-3576",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "cb9d-ac1b-3c7e-c0be",
+                        "name": "Rank: Legendary",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "8a8f-caf1-2a90-59eb",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "d41b-9b11-c7b1-6d59",
+                    "name": "Path of the Cavalier",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Path of the Cavalier",
+                        "id": "69e4-9390-9bb2-3d2c",
+                        "hidden": false,
+                        "typeId": "3242-704e-a559-9242",
+                        "typeName": "Ability (Passive)",
+                        "characteristics": [
+                          {
+                            "name": "Effect",
+                            "$text": "Aspiring -> Elite -> Mighty -> Legendary",
+                            "typeId": "ff88-605f-94a1-be72"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "-",
+                            "typeId": "76ca-c834-2c5c-b178"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "id": "2ecb-d5e1-133a-af7f",
+                        "name": "Rank: Aspiring",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "ca09-ce78-5ee3-9896",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "03bd-0946-c39f-52af",
+                        "name": "Rank: Elite",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "c527-88e1-db00-3d72",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "41e1-ccdb-9efc-07ec",
+                        "name": "Rank: Mighty",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "0088-244a-c747-2643",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "282a-4f7d-584a-a47e",
+                        "name": "Rank: Legendary",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "66b0-7c77-0215-ecf0",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "47ae-4e63-0c4d-9684",
+                    "name": "Path of the Mage / Priest",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Path of the Mage / Priest",
+                        "id": "ff1f-e8d7-5629-d74e",
+                        "hidden": false,
+                        "typeId": "3242-704e-a559-9242",
+                        "typeName": "Ability (Passive)",
+                        "characteristics": [
+                          {
+                            "name": "Effect",
+                            "$text": "Aspiring -> Elite -> Mighty -> Legendary",
+                            "typeId": "ff88-605f-94a1-be72"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "-",
+                            "typeId": "76ca-c834-2c5c-b178"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "id": "a7cd-8316-c321-8141",
+                        "name": "Rank: Aspiring",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "3c41-b200-203c-b732",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "feb0-4c90-cef7-4ffd",
+                        "name": "Rank: Elite",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "098f-ff3a-f608-7572",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "54d9-b157-7bd3-13ae",
+                        "name": "Rank: Mighty",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "f3f8-9d3a-1542-0583",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "474b-3ffc-e1d4-db8f",
+                        "name": "Rank: Legendary",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "d869-52ac-a56b-b012",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "b90b-f5cf-ebc4-1609",
+                    "name": "Path of the Blades of Khorne Champion",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Path of the Blades of Khorne Champion",
+                        "id": "f161-c3ca-19b2-7965",
+                        "hidden": false,
+                        "typeId": "3242-704e-a559-9242",
+                        "typeName": "Ability (Passive)",
+                        "characteristics": [
+                          {
+                            "name": "Effect",
+                            "$text": "Aspiring -> Elite -> Mighty -> Legendary",
+                            "typeId": "ff88-605f-94a1-be72"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "-",
+                            "typeId": "76ca-c834-2c5c-b178"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "id": "ecca-ef98-048f-1148",
+                        "name": "Rank: Aspiring",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "aac4-7b01-662c-cd8f",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "aa82-38ba-a5ec-f384",
+                        "name": "Rank: Elite",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "6164-2eec-6af5-25bc",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "3b55-7477-b133-859e",
+                        "name": "Rank: Mighty",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "7c60-cb53-d8fe-d502",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "75ea-bf86-1818-e4e4",
+                        "name": "Rank: Legendary",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "70f0-d2e0-2601-b7b1",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "entryLinks": [
+      {
+        "id": "8a4c-55ad-8c14-68b4",
+        "name": "Blades of Khorne: Battle Traits, Formations & Lores",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "b318-6cdf-92bc-5bf8"
+      },
+      {
+        "id": "d597-f325-cf33-7028",
+        "name": "Skull Altar",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "3213-cb43-3b68-bd72"
+      },
+      {
+        "id": "e280-76ca-ad8a-c61c",
+        "name": "Skarbrand",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "e1d4-df12-536f-be00"
+      },
+      {
+        "id": "c7f3-a471-ec1b-c313",
+        "name": "Bloodletters",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "6c29-fb6f-e732-2180"
+      },
+      {
+        "id": "7f69-564f-443b-f991",
+        "name": "Anvil of Apotheosis: Blades of Khorne Hero",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "1524-5250-73d3-0901"
+      }
+    ]
+  }
+}

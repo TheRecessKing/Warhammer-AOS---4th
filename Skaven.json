@@ -1,0 +1,1728 @@
+{
+  "catalogue": {
+    "id": "b143-3609-b8e3-0006",
+    "name": "Skaven",
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "library": false,
+    "gameSystemId": "e1c7-e246-3b41-c857",
+    "gameSystemRevision": 2,
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "sharedSelectionEntries": [
+      {
+        "id": "b4e4-8a53-5d70-5ed9",
+        "name": "Skaven: Battle Traits, Formations & Lores",
+        "type": "upgrade",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "id": "fe15-9b88-788b-f5f6",
+            "name": "Army Composition",
+            "primary": true,
+            "targetId": "c64e-e255-9117-75bc"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Always Three Clawsteps Ahead",
+            "id": "6335-7362-951b-38c5",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "End of Any Turn",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Free D6 inches move or retreat once per turn.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          },
+          {
+            "name": "The Lurking Vermintide",
+            "id": "b913-c10a-e0b6-ca54",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Deployment Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Deploy in Gnawhole tunnels.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "id": "98a8-c10f-120d-8b13",
+            "name": "Battle Formations",
+            "constraints": [
+              {
+                "id": "b9aa-0822-8c02-8eea",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "a0b1-7643-e6ce-628d",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "id": "6775-bb5a-f57a-bd3b",
+                "name": "Claw-horde",
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Claw-horde",
+                    "id": "fc2b-7e2e-ba61-d002",
+                    "hidden": false,
+                    "typeId": "3242-704e-a559-9242",
+                    "typeName": "Ability (Passive)",
+                    "characteristics": [
+                      {
+                        "name": "Effect",
+                        "$text": "Add 1 to Rend for charging Verminus units.",
+                        "typeId": "ff88-605f-94a1-be72"
+                      },
+                      {
+                        "name": "Keywords",
+                        "$text": "-",
+                        "typeId": "76ca-c834-2c5c-b178"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "2d89-4d69-cb21-69a1",
+                "name": "Warpcog Convocation",
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Warpcog Convocation",
+                    "id": "5c33-6098-136b-09bd",
+                    "hidden": false,
+                    "typeId": "3242-704e-a559-9242",
+                    "typeName": "Ability (Passive)",
+                    "characteristics": [
+                      {
+                        "name": "Effect",
+                        "$text": "Overcharge Skryre weapons.",
+                        "typeId": "ff88-605f-94a1-be72"
+                      },
+                      {
+                        "name": "Keywords",
+                        "$text": "-",
+                        "typeId": "76ca-c834-2c5c-b178"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "e846-a981-fce0-38cd",
+                "name": "Fleshmeld Menagerie",
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Fleshmeld Menagerie",
+                    "id": "a60e-54d0-e3a7-5e5d",
+                    "hidden": false,
+                    "typeId": "3242-704e-a559-9242",
+                    "typeName": "Ability (Passive)",
+                    "characteristics": [
+                      {
+                        "name": "Effect",
+                        "$text": "Heal D3 on Moulder Monsters.",
+                        "typeId": "ff88-605f-94a1-be72"
+                      },
+                      {
+                        "name": "Keywords",
+                        "$text": "-",
+                        "typeId": "76ca-c834-2c5c-b178"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "2843-7345-e456-35c1",
+                "name": "Virulent Procession",
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Virulent Procession",
+                    "id": "eb89-ff86-ce3c-04ac",
+                    "hidden": false,
+                    "typeId": "3242-704e-a559-9242",
+                    "typeName": "Ability (Passive)",
+                    "characteristics": [
+                      {
+                        "name": "Effect",
+                        "$text": "Add 1 to chanting for Pestilens Priests.",
+                        "typeId": "ff88-605f-94a1-be72"
+                      },
+                      {
+                        "name": "Keywords",
+                        "$text": "-",
+                        "typeId": "76ca-c834-2c5c-b178"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "909e-3743-e1a5-6b04",
+            "name": "Faction Spell / Prayer Lore",
+            "constraints": [
+              {
+                "id": "c988-bf33-8d73-ff5b",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "id": "ead2-dd47-d147-d8b1",
+                "name": "Lore of Ruin: Skitterleap",
+                "type": "upgrade",
+                "profiles": [
+                  {
+                    "name": "Skitterleap",
+                    "id": "475a-8d1c-b0ce-8d88",
+                    "hidden": false,
+                    "typeId": "8c87-9d5c-e381-aa12",
+                    "typeName": "Ability (Spell / Prayer)",
+                    "characteristics": [
+                      {
+                        "name": "Timing",
+                        "$text": "Your Hero Phase",
+                        "typeId": "010a-32e4-bfd1-7ecb"
+                      },
+                      {
+                        "name": "Value",
+                        "$text": "6",
+                        "typeId": "b16b-b0ee-9fbc-e044"
+                      },
+                      {
+                        "name": "Declare",
+                        "$text": "-",
+                        "typeId": "e949-67d2-ea72-a995"
+                      },
+                      {
+                        "name": "Effect",
+                        "$text": "Teleport a Skaven Hero >9 inches from enemies.",
+                        "typeId": "8f30-b5f7-2014-976b"
+                      },
+                      {
+                        "name": "Keywords",
+                        "$text": "Spell / Prayer",
+                        "typeId": "c7c5-4969-f346-2a95"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "id": "13f2-42ff-13d0-8988",
+            "name": "Path to Glory: Glory Points Tracker",
+            "type": "upgrade",
+            "costs": [
+              {
+                "name": "Glory Points",
+                "typeId": "081b-52dd-5c11-94a7",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "e6bc-d3b1-b54e-9e7d",
+        "name": "Gnawhole",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "b4b5-b2d8-40fa-267f",
+            "name": "FACTION TERRAIN",
+            "primary": true,
+            "targetId": "dc04-3038-d16a-67d3"
+          },
+          {
+            "id": "9ab7-f43f-29b4-2f2f",
+            "name": "CHAOS",
+            "primary": false,
+            "targetId": "8fdf-edc4-a529-ac84"
+          },
+          {
+            "id": "b1c1-b3d6-2ac8-b3c8",
+            "name": "SKAVEN",
+            "primary": false,
+            "targetId": "fb69-9181-3b00-33aa"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Gnawhole",
+            "id": "8676-d404-0ce9-165e",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "-",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "10",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "4+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "-",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Gnawhole",
+            "id": "d231-ad21-1455-51da",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Teleportation tunnels and clanrat reinforcements.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "8f95-30e2-0256-288f",
+        "name": "Vizzik Skour, Prophet of the Horned Rat",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 420
+          },
+          {
+            "name": "Glory Points",
+            "typeId": "081b-52dd-5c11-94a7",
+            "value": 0
+          },
+          {
+            "name": "Renown",
+            "typeId": "4f86-086d-1024-4741",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "3b9a-daac-cf57-fecb",
+            "name": "HERO",
+            "hidden": false,
+            "primary": true,
+            "targetId": "e5af-857d-36f1-e87b"
+          },
+          {
+            "id": "44b9-ef44-c959-8277",
+            "name": "MONSTER",
+            "hidden": false,
+            "primary": false,
+            "targetId": "28d2-8b6e-8b12-0ef4"
+          },
+          {
+            "id": "daea-1229-6fb2-ddb7",
+            "name": "UNIQUE",
+            "hidden": false,
+            "primary": false,
+            "targetId": "c7a0-dab2-f79f-5b95"
+          },
+          {
+            "id": "8883-260c-6ede-7219",
+            "name": "WARMASTER",
+            "hidden": false,
+            "primary": false,
+            "targetId": "40e2-3003-5d4d-4121"
+          },
+          {
+            "id": "0293-b495-0a63-eec5",
+            "name": "PRIEST",
+            "hidden": false,
+            "primary": false,
+            "targetId": "06b0-46b4-aed3-1b62"
+          },
+          {
+            "id": "d4e5-fdeb-00bf-d2cd",
+            "name": "CHAOS",
+            "hidden": false,
+            "primary": false,
+            "targetId": "8fdf-edc4-a529-ac84"
+          },
+          {
+            "id": "aa31-1cff-bace-b172",
+            "name": "SKAVEN",
+            "hidden": false,
+            "primary": false,
+            "targetId": "fb69-9181-3b00-33aa"
+          },
+          {
+            "id": "9736-b249-623d-39d5",
+            "name": "DAEMON",
+            "hidden": false,
+            "primary": false,
+            "targetId": "a72e-8c6c-0869-6839"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Vizzik Skour, Prophet of the Horned Rat",
+            "id": "8117-ff00-6022-9fd6",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "8\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "16",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "4+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "5",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "-",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Gnawstaff & Scourging Claws",
+            "id": "291d-db85-4f5e-7a42",
+            "hidden": false,
+            "typeId": "efc5-2391-d26b-1c01",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {
+                "name": "Atk",
+                "$text": "7",
+                "typeId": "725f-6651-a0d6-fb39"
+              },
+              {
+                "name": "Hit",
+                "$text": "3+",
+                "typeId": "5f8d-d581-a1f2-3a03"
+              },
+              {
+                "name": "Wnd",
+                "$text": "3+",
+                "typeId": "97dd-480b-0b3d-31ba"
+              },
+              {
+                "name": "Rnd",
+                "$text": "2",
+                "typeId": "fa46-7896-faa6-ddbf"
+              },
+              {
+                "name": "Dmg",
+                "$text": "2",
+                "typeId": "50b7-706c-f3cf-8240"
+              },
+              {
+                "name": "Ability",
+                "$text": "Crit (Mortal)",
+                "typeId": "a75e-caea-4e00-ec11"
+              }
+            ]
+          },
+          {
+            "name": "Death Frenzy",
+            "id": "4f52-dcfd-9d5f-e07d",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Chants powerful prayers.",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Your Hero Phase",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "id": "7b3d-1040-1260-4f07",
+            "name": "General",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "cea6-f0df-d701-c7de",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [],
+        "modifiers": []
+      },
+      {
+        "id": "5d20-fbbf-df47-1ad6",
+        "name": "Clanrats",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 150
+          },
+          {
+            "name": "Glory Points",
+            "typeId": "081b-52dd-5c11-94a7",
+            "value": 0
+          },
+          {
+            "name": "Renown",
+            "typeId": "4f86-086d-1024-4741",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "f364-bb01-4173-1462",
+            "name": "INFANTRY",
+            "hidden": false,
+            "primary": true,
+            "targetId": "cd23-b747-351e-8bfa"
+          },
+          {
+            "id": "de3e-efbb-95bc-b252",
+            "name": "CHAOS",
+            "hidden": false,
+            "primary": false,
+            "targetId": "8fdf-edc4-a529-ac84"
+          },
+          {
+            "id": "c5bc-b7bd-b0e0-852e",
+            "name": "SKAVEN",
+            "hidden": false,
+            "primary": false,
+            "targetId": "fb69-9181-3b00-33aa"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Clanrats",
+            "id": "cbf1-3fbe-6263-7a75",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "6\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "1",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "5+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "1",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "-",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Rusty Blade",
+            "id": "f9ec-907a-6f4d-71f5",
+            "hidden": false,
+            "typeId": "efc5-2391-d26b-1c01",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {
+                "name": "Atk",
+                "$text": "2",
+                "typeId": "725f-6651-a0d6-fb39"
+              },
+              {
+                "name": "Hit",
+                "$text": "4+",
+                "typeId": "5f8d-d581-a1f2-3a03"
+              },
+              {
+                "name": "Wnd",
+                "$text": "4+",
+                "typeId": "97dd-480b-0b3d-31ba"
+              },
+              {
+                "name": "Rnd",
+                "$text": "0",
+                "typeId": "fa46-7896-faa6-ddbf"
+              },
+              {
+                "name": "Dmg",
+                "$text": "1",
+                "typeId": "50b7-706c-f3cf-8240"
+              },
+              {
+                "name": "Ability",
+                "$text": "Crit (Auto-wound)",
+                "typeId": "a75e-caea-4e00-ec11"
+              }
+            ]
+          },
+          {
+            "name": "Seething Swarm",
+            "id": "80e4-3c3b-7499-78aa",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Return D3 slain models at end of turn.",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "End of Any Turn",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "id": "654d-2f3e-a312-ec41",
+            "name": "Reinforced",
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "2526-39c7-0059-155f",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "id": "367b-ef41-0bde-1109",
+            "name": "Path to Glory (Paths, Renown & Battle Scars)",
+            "hidden": false,
+            "collapsible": true,
+            "selectionEntries": [
+              {
+                "id": "64c7-cbaf-06cf-31fb",
+                "name": "Renown Points",
+                "type": "upgrade",
+                "costs": [
+                  {
+                    "name": "Renown",
+                    "typeId": "4f86-086d-1024-4741",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "id": "2924-8505-97eb-fca3",
+                "name": "Battle Wounds / Battle Scars",
+                "type": "upgrade"
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "id": "7ba4-1867-b593-228b",
+                "name": "Unit Path",
+                "constraints": [
+                  {
+                    "id": "a739-2bf2-5df8-85e3",
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent"
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "id": "ce72-71ce-0634-f362",
+                    "name": "Path of the Warrior",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Path of the Warrior",
+                        "id": "18bc-1cbd-07e2-e106",
+                        "hidden": false,
+                        "typeId": "3242-704e-a559-9242",
+                        "typeName": "Ability (Passive)",
+                        "characteristics": [
+                          {
+                            "name": "Effect",
+                            "$text": "Aspiring -> Elite -> Mighty -> Legendary",
+                            "typeId": "ff88-605f-94a1-be72"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "-",
+                            "typeId": "76ca-c834-2c5c-b178"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "id": "f6d0-0ce1-f12e-9d43",
+                        "name": "Rank: Aspiring",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "bd1e-7749-4294-64fe",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "42a1-53aa-308e-45dc",
+                        "name": "Rank: Elite",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "13c5-9fbb-3ac8-60c7",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "31ae-8af3-9fac-2a4d",
+                        "name": "Rank: Mighty",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "7ae9-c657-0423-28bd",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "a8ee-ac28-df8d-32fb",
+                        "name": "Rank: Legendary",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "b258-a62c-bbce-d46f",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "eeb9-2e7e-7d7d-1521",
+                    "name": "Path of the Cavalier",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Path of the Cavalier",
+                        "id": "17f7-688c-0244-f783",
+                        "hidden": false,
+                        "typeId": "3242-704e-a559-9242",
+                        "typeName": "Ability (Passive)",
+                        "characteristics": [
+                          {
+                            "name": "Effect",
+                            "$text": "Aspiring -> Elite -> Mighty -> Legendary",
+                            "typeId": "ff88-605f-94a1-be72"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "-",
+                            "typeId": "76ca-c834-2c5c-b178"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "id": "a8e1-6a30-1622-acfd",
+                        "name": "Rank: Aspiring",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "4bd4-a8b6-92a5-763a",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "56cd-9b15-db11-118c",
+                        "name": "Rank: Elite",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "857e-7a81-1eb3-12f4",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "d4e8-55ec-a802-b3b0",
+                        "name": "Rank: Mighty",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "2345-cfb4-faba-9098",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "5413-77e3-e5b2-fcb3",
+                        "name": "Rank: Legendary",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "335f-1a3a-8915-e981",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "3ad8-fdf0-867b-96b6",
+                    "name": "Path of the Behemoth / Sentinel",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Path of the Behemoth / Sentinel",
+                        "id": "9ea3-9025-5dc9-400f",
+                        "hidden": false,
+                        "typeId": "3242-704e-a559-9242",
+                        "typeName": "Ability (Passive)",
+                        "characteristics": [
+                          {
+                            "name": "Effect",
+                            "$text": "Aspiring -> Elite -> Mighty -> Legendary",
+                            "typeId": "ff88-605f-94a1-be72"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "-",
+                            "typeId": "76ca-c834-2c5c-b178"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "id": "7155-0d75-6b27-5edf",
+                        "name": "Rank: Aspiring",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "ace7-8a13-8394-c52c",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "cc93-7e34-23c6-4c8e",
+                        "name": "Rank: Elite",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "a0ba-0a23-f6c6-25a3",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "586b-c8f4-04c6-9332",
+                        "name": "Rank: Mighty",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "6158-fa41-aa3a-890a",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "17e3-f48a-c0dc-aaae",
+                        "name": "Rank: Legendary",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "6c70-8d6f-28b0-b29d",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "ed34-a816-d431-573c",
+                    "name": "Path of Skaven Glory",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Path of Skaven Glory",
+                        "id": "f5e8-060f-7885-f9b9",
+                        "hidden": false,
+                        "typeId": "3242-704e-a559-9242",
+                        "typeName": "Ability (Passive)",
+                        "characteristics": [
+                          {
+                            "name": "Effect",
+                            "$text": "Aspiring -> Elite -> Mighty -> Legendary",
+                            "typeId": "ff88-605f-94a1-be72"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "-",
+                            "typeId": "76ca-c834-2c5c-b178"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "id": "b9ee-ce66-abf9-7a29",
+                        "name": "Rank: Aspiring",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "ac7d-3f3c-6fb8-ca66",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "bef3-ac95-5e29-3f4c",
+                        "name": "Rank: Elite",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "5ad8-2b9c-424d-61bb",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "276a-1bc4-d9f2-987e",
+                        "name": "Rank: Mighty",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "8f1c-1311-ae97-8350",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1ced-b6b3-489b-9a35",
+                        "name": "Rank: Legendary",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "aebb-70f2-46e8-c7a4",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "df1c-9cfa-2ada-6b99",
+            "type": "multiply",
+            "value": 2,
+            "conditions": [
+              {
+                "childId": "654d-2f3e-a312-ec41",
+                "field": "selections",
+                "scope": "self",
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b5ff-25f3-2547-c261",
+        "name": "Anvil of Apotheosis: Skaven Hero",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          },
+          {
+            "name": "Destiny Points",
+            "typeId": "fefc-3569-91a5-f501",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "b6a1-e159-809b-3b33",
+            "name": "HERO",
+            "primary": true,
+            "targetId": "e5af-857d-36f1-e87b"
+          },
+          {
+            "id": "92dd-23c3-5d9c-21f7",
+            "name": "CHAOS",
+            "primary": false,
+            "targetId": "8fdf-edc4-a529-ac84"
+          },
+          {
+            "id": "605c-b9aa-aa63-fbf8",
+            "name": "SKAVEN",
+            "primary": false,
+            "targetId": "fb69-9181-3b00-33aa"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Anvil of Apotheosis: Skaven Hero",
+            "id": "9077-7257-491d-ba0e",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "5\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "5",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "4+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "2",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "-",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "id": "4407-2890-80bb-ca30",
+            "name": "Destiny Point Limit",
+            "constraints": [
+              {
+                "id": "edc2-2c18-7b29-854b",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "2a8a-55a3-82c8-35ac",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "id": "7b63-d436-cef2-406e",
+                "name": "Aspiring Champion (15 Destiny Pts / 120 pts)",
+                "type": "upgrade",
+                "costs": [
+                  {
+                    "name": "pts",
+                    "typeId": "df1c-9cfa-2ada-6b99",
+                    "value": 120
+                  }
+                ]
+              },
+              {
+                "id": "c333-7a51-3f19-a6da",
+                "name": "Aspiring Lord (25 Destiny Pts / 200 pts)",
+                "type": "upgrade",
+                "costs": [
+                  {
+                    "name": "pts",
+                    "typeId": "df1c-9cfa-2ada-6b99",
+                    "value": 200
+                  }
+                ]
+              },
+              {
+                "id": "c362-8b2c-ef42-67b0",
+                "name": "Exalted Lord (35 Destiny Pts / 300 pts)",
+                "type": "upgrade",
+                "costs": [
+                  {
+                    "name": "pts",
+                    "typeId": "df1c-9cfa-2ada-6b99",
+                    "value": 300
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "6986-58e1-e08c-f47b",
+            "name": "Path to Glory (Paths, Renown & Battle Scars)",
+            "hidden": false,
+            "collapsible": true,
+            "selectionEntries": [
+              {
+                "id": "7b7e-56db-dd25-fa5e",
+                "name": "Renown Points",
+                "type": "upgrade",
+                "costs": [
+                  {
+                    "name": "Renown",
+                    "typeId": "4f86-086d-1024-4741",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "id": "6ee7-fe6b-bc41-99d4",
+                "name": "Battle Wounds / Battle Scars",
+                "type": "upgrade"
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "id": "6a3c-1f2d-32a4-3608",
+                "name": "Unit Path",
+                "constraints": [
+                  {
+                    "id": "e020-5d95-9018-37c4",
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent"
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "id": "25c1-e75d-f5ca-7b61",
+                    "name": "Path of the Leader",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Path of the Leader",
+                        "id": "6d38-c9bc-8ace-419b",
+                        "hidden": false,
+                        "typeId": "3242-704e-a559-9242",
+                        "typeName": "Ability (Passive)",
+                        "characteristics": [
+                          {
+                            "name": "Effect",
+                            "$text": "Aspiring -> Elite -> Mighty -> Legendary",
+                            "typeId": "ff88-605f-94a1-be72"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "-",
+                            "typeId": "76ca-c834-2c5c-b178"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "id": "f638-4bd0-9028-e189",
+                        "name": "Rank: Aspiring",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "4171-6a16-e4a4-5533",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "c874-716c-47db-f5e1",
+                        "name": "Rank: Elite",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "d3de-4226-0a94-3971",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "dcb4-58c7-08b8-ec43",
+                        "name": "Rank: Mighty",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "5e38-4ea5-3f4d-9b98",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "b00c-30b7-4134-2794",
+                        "name": "Rank: Legendary",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "8135-9c15-02cf-5c1d",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "5f85-2bc1-cbce-cb63",
+                    "name": "Path of the Cavalier",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Path of the Cavalier",
+                        "id": "5a99-8163-4023-6449",
+                        "hidden": false,
+                        "typeId": "3242-704e-a559-9242",
+                        "typeName": "Ability (Passive)",
+                        "characteristics": [
+                          {
+                            "name": "Effect",
+                            "$text": "Aspiring -> Elite -> Mighty -> Legendary",
+                            "typeId": "ff88-605f-94a1-be72"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "-",
+                            "typeId": "76ca-c834-2c5c-b178"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "id": "aaa6-e4d8-a80c-41b6",
+                        "name": "Rank: Aspiring",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "823b-ebd9-9ce0-e241",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "6f70-3dcd-828d-7b85",
+                        "name": "Rank: Elite",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "4ebc-63c9-8f21-6717",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "b984-1a20-1f24-55ed",
+                        "name": "Rank: Mighty",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "95d4-2d47-dd51-1037",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "8292-ac0f-4624-ebe5",
+                        "name": "Rank: Legendary",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "d3ae-12ae-4dff-d04e",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "322c-8464-c856-69ad",
+                    "name": "Path of the Mage / Priest",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Path of the Mage / Priest",
+                        "id": "7bae-397b-968e-7aed",
+                        "hidden": false,
+                        "typeId": "3242-704e-a559-9242",
+                        "typeName": "Ability (Passive)",
+                        "characteristics": [
+                          {
+                            "name": "Effect",
+                            "$text": "Aspiring -> Elite -> Mighty -> Legendary",
+                            "typeId": "ff88-605f-94a1-be72"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "-",
+                            "typeId": "76ca-c834-2c5c-b178"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "id": "f31a-cc4e-aa53-a301",
+                        "name": "Rank: Aspiring",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "7485-dc68-efc3-702a",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "02f2-c11e-5e33-cf90",
+                        "name": "Rank: Elite",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "1683-50c3-5ae7-8313",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "66be-7178-9518-eaf9",
+                        "name": "Rank: Mighty",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "6908-a8ed-e5aa-cf16",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "a3f4-f425-389e-6377",
+                        "name": "Rank: Legendary",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "c492-c0f0-3ee5-a52d",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "d35b-3a9f-c08b-5069",
+                    "name": "Path of the Skaven Champion",
+                    "type": "upgrade",
+                    "profiles": [
+                      {
+                        "name": "Path of the Skaven Champion",
+                        "id": "8db4-d2f3-0266-2bef",
+                        "hidden": false,
+                        "typeId": "3242-704e-a559-9242",
+                        "typeName": "Ability (Passive)",
+                        "characteristics": [
+                          {
+                            "name": "Effect",
+                            "$text": "Aspiring -> Elite -> Mighty -> Legendary",
+                            "typeId": "ff88-605f-94a1-be72"
+                          },
+                          {
+                            "name": "Keywords",
+                            "$text": "-",
+                            "typeId": "76ca-c834-2c5c-b178"
+                          }
+                        ]
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "id": "24d5-102e-ba6a-d7f5",
+                        "name": "Rank: Aspiring",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "16b0-d1dd-91ae-927d",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "7c34-b594-fae9-f604",
+                        "name": "Rank: Elite",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "eb7f-62f1-0975-5786",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "d455-2fc3-54fd-9b51",
+                        "name": "Rank: Mighty",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "66c6-a272-144d-0c3e",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "298a-6c28-66d3-3995",
+                        "name": "Rank: Legendary",
+                        "type": "upgrade",
+                        "constraints": [
+                          {
+                            "id": "cf23-abf7-6062-0941",
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "entryLinks": [
+      {
+        "id": "3269-392f-915c-6e1b",
+        "name": "Skaven: Battle Traits, Formations & Lores",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "b4e4-8a53-5d70-5ed9"
+      },
+      {
+        "id": "4069-f9d1-1153-21a6",
+        "name": "Gnawhole",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "e6bc-d3b1-b54e-9e7d"
+      },
+      {
+        "id": "8ad1-7baf-a969-fbce",
+        "name": "Vizzik Skour, Prophet of the Horned Rat",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "8f95-30e2-0256-288f"
+      },
+      {
+        "id": "a189-c3f3-2dc8-cc4d",
+        "name": "Clanrats",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "5d20-fbbf-df47-1ad6"
+      },
+      {
+        "id": "7dc6-230e-1b0f-b36b",
+        "name": "Anvil of Apotheosis: Skaven Hero",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "b5ff-25f3-2547-c261"
+      }
+    ]
+  }
+}

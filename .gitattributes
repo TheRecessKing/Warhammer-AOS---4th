@@ -1,0 +1,10 @@
+# Default to normalized LF line endings for text files
+* text=auto eol=lf
+
+# Explicitly mark source, config, and JSON data files as text with LF
+*.py text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf

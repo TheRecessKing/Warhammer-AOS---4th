@@ -1,0 +1,302 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-19T03:53:55.797928+00:00",
+  "repository": {
+    "slug": "YOUR_GITHUB_USERNAME/aos-4th-newrecruit",
+    "branch": "main"
+  },
+  "counts": {
+    "game_systems": 1,
+    "catalogues": 25,
+    "total_files": 26
+  },
+  "gameSystems": [
+    {
+      "file": "Warhammer Age of Sigmar.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Warhammer Age of Sigmar.json",
+      "size_bytes": 185254,
+      "sha256": "162e918b244332a3234e35a6efad7ade7c50af817a35d5bd2337f3645a0cc4c8",
+      "kind": "gameSystem",
+      "id": "e1c7-e246-3b41-c857",
+      "name": "Warhammer Age of Sigmar",
+      "revision": 2
+    }
+  ],
+  "catalogues": [
+    {
+      "file": "Blades of Khorne.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Blades of Khorne.json",
+      "size_bytes": 58692,
+      "sha256": "25403b98084de02e70456db44ddb484bf7900560e477a4f3cc56f4d1622899ca",
+      "kind": "catalogue",
+      "id": "0f2d-567b-9b1a-e415",
+      "name": "Blades of Khorne",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Cities of Sigmar.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Cities of Sigmar.json",
+      "size_bytes": 81454,
+      "sha256": "b988586f3ba5bfd954031dbcffd843fb5475f1bfdec2366607518b743e57cb0a",
+      "kind": "catalogue",
+      "id": "4337-9d69-093f-1b43",
+      "name": "Cities of Sigmar",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Daughters of Khaine.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Daughters of Khaine.json",
+      "size_bytes": 62039,
+      "sha256": "57e52c2a960c39292c2c35da33cf41c2800a74372642dda41ca79da3c37309d7",
+      "kind": "catalogue",
+      "id": "fbec-6f46-f591-f865",
+      "name": "Daughters of Khaine",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Disciples of Tzeentch.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Disciples of Tzeentch.json",
+      "size_bytes": 58598,
+      "sha256": "9bd7150e52e5faa23f608032359153f893b2df2e0031d158ce1779f6f20e8cc4",
+      "kind": "catalogue",
+      "id": "3d09-26fc-b8cd-80c4",
+      "name": "Disciples of Tzeentch",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Flesh-eater Courts.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Flesh-eater Courts.json",
+      "size_bytes": 59968,
+      "sha256": "865a9c741ed67e00a7c048b21cc75527c9abe6d63826b0fff02724b8568a5b65",
+      "kind": "catalogue",
+      "id": "88a7-6dcd-280b-8587",
+      "name": "Flesh-eater Courts",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Fyreslayers.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Fyreslayers.json",
+      "size_bytes": 77344,
+      "sha256": "1243bd14d1ce9ce550e6ad4ddb0dc6d580c594a1ec4f530f6abe643306286d2f",
+      "kind": "catalogue",
+      "id": "7de8-62ca-90b8-ac2f",
+      "name": "Fyreslayers",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Gloomspite Gitz.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Gloomspite Gitz.json",
+      "size_bytes": 59722,
+      "sha256": "c10f3305181e2bdea9d7c9a2aefbc135a468828f235ca1e6bed2de081d8a5255",
+      "kind": "catalogue",
+      "id": "5210-ff65-21c2-9c86",
+      "name": "Gloomspite Gitz",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Hedonites of Slaanesh.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Hedonites of Slaanesh.json",
+      "size_bytes": 76805,
+      "sha256": "43b7a4b3ab1c1f65dffc16fec2bbc99a79d46495d23c1019a4b0c2085570e322",
+      "kind": "catalogue",
+      "id": "5e11-6c4d-6e8b-b89c",
+      "name": "Hedonites of Slaanesh",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Helsmiths of Hashut.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Helsmiths of Hashut.json",
+      "size_bytes": 74541,
+      "sha256": "5cc1bca22e2df46549ef3a0c83841910e5115f5c7751a0767e75e7242050f132",
+      "kind": "catalogue",
+      "id": "5548-e72a-7762-cbb5",
+      "name": "Helsmiths of Hashut",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Idoneth Deepkin.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Idoneth Deepkin.json",
+      "size_bytes": 76691,
+      "sha256": "1c3a7d4060f052940d0071a9ba51c2f6d3250493a70ea461cce91a28cd894ebe",
+      "kind": "catalogue",
+      "id": "dac4-bfa8-42fc-881f",
+      "name": "Idoneth Deepkin",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Ironjawz.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Ironjawz.json",
+      "size_bytes": 59805,
+      "sha256": "46a2cca1862d4e6b8c5537dcc487bb64f3617c660e53244fb02146d7ff462fb5",
+      "kind": "catalogue",
+      "id": "6829-e368-07f4-2c33",
+      "name": "Ironjawz",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Kharadron Overlords.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Kharadron Overlords.json",
+      "size_bytes": 55913,
+      "sha256": "628678ac2b9be569ba2086be067491758edb86e573bbcbba1ef942152e39931d",
+      "kind": "catalogue",
+      "id": "9e71-41a4-d533-d558",
+      "name": "Kharadron Overlords",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Kruleboyz.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Kruleboyz.json",
+      "size_bytes": 58840,
+      "sha256": "a989986d1ca43e9839c52309cace5fa3434b158acf023fad187a88acef7d55c6",
+      "kind": "catalogue",
+      "id": "8984-8f1b-a89a-99aa",
+      "name": "Kruleboyz",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Lumineth Realm-lords.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Lumineth Realm-lords.json",
+      "size_bytes": 60321,
+      "sha256": "67115820aa9661f7582fa65497cfebb254492d60b6f8fc088326371f2e0f7bf4",
+      "kind": "catalogue",
+      "id": "53e1-fa47-9d94-0fec",
+      "name": "Lumineth Realm-lords",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Maggotkin of Nurgle.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Maggotkin of Nurgle.json",
+      "size_bytes": 77752,
+      "sha256": "97b267d57eb2c2e9e0bef9396e8d36f230b33503181cc74eb3cf2438cd159ff7",
+      "kind": "catalogue",
+      "id": "482f-6bb3-c972-5287",
+      "name": "Maggotkin of Nurgle",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Nighthaunt.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Nighthaunt.json",
+      "size_bytes": 56815,
+      "sha256": "0b16799387a88b5c591c5000369bb96abe1124a0c6579f2050637dbbd1babff7",
+      "kind": "catalogue",
+      "id": "207c-20b3-388b-6f5e",
+      "name": "Nighthaunt",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Ogor Mawtribes.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Ogor Mawtribes.json",
+      "size_bytes": 78315,
+      "sha256": "623f49948bf454838a6d41fa9903f6655829b11a576073c4a41f9b8ceff2d84c",
+      "kind": "catalogue",
+      "id": "a516-2cd6-bfca-8c6b",
+      "name": "Ogor Mawtribes",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Ossiarch Bonereapers.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Ossiarch Bonereapers.json",
+      "size_bytes": 58507,
+      "sha256": "e022f909731ca0224a4f933d3a43116b17f2a255b063c65f86bfd855094b1413",
+      "kind": "catalogue",
+      "id": "1783-31c5-542a-8ddd",
+      "name": "Ossiarch Bonereapers",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Seraphon.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Seraphon.json",
+      "size_bytes": 58688,
+      "sha256": "9fbc18842daba6288821bbc7dcbb77d86ea4d60c4594e3224e0a0165a411fc7c",
+      "kind": "catalogue",
+      "id": "62bb-282d-f373-d7dd",
+      "name": "Seraphon",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Skaven.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Skaven.json",
+      "size_bytes": 59883,
+      "sha256": "851dd965cc8cc602ed9cff946ea0865a2a319872a73560ca57199e0526db9d07",
+      "kind": "catalogue",
+      "id": "b143-3609-b8e3-0006",
+      "name": "Skaven",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Slaves to Darkness.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Slaves to Darkness.json",
+      "size_bytes": 70467,
+      "sha256": "cc260dac08f63dd58e23285f79f1068fc17715392aff47cd94e6785b60534f93",
+      "kind": "catalogue",
+      "id": "4042-c299-35eb-028b",
+      "name": "Slaves to Darkness",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Sons of Behemat.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Sons of Behemat.json",
+      "size_bytes": 53640,
+      "sha256": "cd7dec8a07af91eb9687cc8bc5af506aa4ae6d789ccad9f87fc0fb09a0dad2c3",
+      "kind": "catalogue",
+      "id": "4972-ae6c-e927-995e",
+      "name": "Sons of Behemat",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Soulblight Gravelords.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Soulblight Gravelords.json",
+      "size_bytes": 56956,
+      "sha256": "d62ee8d73bdd3f7ff042a6caad803cc6205316346c540af7edcdff881e614c37",
+      "kind": "catalogue",
+      "id": "a3ca-6169-1eab-03e9",
+      "name": "Soulblight Gravelords",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Stormcast Eternals.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Stormcast Eternals.json",
+      "size_bytes": 60931,
+      "sha256": "cb5df303c452522453dc5db0850a8846b112a5e9cbd9fa70285dae77988e05bc",
+      "kind": "catalogue",
+      "id": "97d1-366d-9802-ef6a",
+      "name": "Stormcast Eternals",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    },
+    {
+      "file": "Sylvaneth.json",
+      "raw_url": "https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/aos-4th-newrecruit/main/Sylvaneth.json",
+      "size_bytes": 61313,
+      "sha256": "f7dead38dac3fef1c1f34f3aad546868347f8726b877185ef455e1a3e1586720",
+      "kind": "catalogue",
+      "id": "987d-7128-8b18-fa6c",
+      "name": "Sylvaneth",
+      "revision": 1,
+      "gameSystemId": "e1c7-e246-3b41-c857"
+    }
+  ]
+}

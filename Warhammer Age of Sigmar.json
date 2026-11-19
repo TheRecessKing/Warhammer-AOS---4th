@@ -1,0 +1,6145 @@
+{
+  "gameSystem": {
+    "id": "e1c7-e246-3b41-c857",
+    "name": "Warhammer Age of Sigmar",
+    "revision": 2,
+    "battleScribeVersion": "2.03",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "costTypes": [
+      {
+        "id": "df1c-9cfa-2ada-6b99",
+        "name": "pts",
+        "defaultCostLimit": 2000,
+        "hidden": false
+      },
+      {
+        "id": "081b-52dd-5c11-94a7",
+        "name": "Glory Points",
+        "defaultCostLimit": -1,
+        "hidden": false
+      },
+      {
+        "id": "4f86-086d-1024-4741",
+        "name": "Renown",
+        "defaultCostLimit": -1,
+        "hidden": false
+      },
+      {
+        "id": "fefc-3569-91a5-f501",
+        "name": "Destiny Points",
+        "defaultCostLimit": -1,
+        "hidden": false
+      }
+    ],
+    "profileTypes": [
+      {
+        "id": "b25b-4b84-ca43-bd58",
+        "name": "Unit",
+        "characteristicTypes": [
+          {
+            "id": "b10d-8fa9-3777-07d7",
+            "name": "Move"
+          },
+          {
+            "id": "8cfc-09eb-7e48-4c07",
+            "name": "Health"
+          },
+          {
+            "id": "733e-c6e3-c6a3-3267",
+            "name": "Save"
+          },
+          {
+            "id": "ec0c-6567-bc09-2e6f",
+            "name": "Control"
+          },
+          {
+            "id": "0d5c-5238-a4f3-b5a4",
+            "name": "Banishment"
+          }
+        ]
+      },
+      {
+        "id": "efc5-2391-d26b-1c01",
+        "name": "Melee Weapon",
+        "characteristicTypes": [
+          {
+            "id": "725f-6651-a0d6-fb39",
+            "name": "Atk"
+          },
+          {
+            "id": "5f8d-d581-a1f2-3a03",
+            "name": "Hit"
+          },
+          {
+            "id": "97dd-480b-0b3d-31ba",
+            "name": "Wnd"
+          },
+          {
+            "id": "fa46-7896-faa6-ddbf",
+            "name": "Rnd"
+          },
+          {
+            "id": "50b7-706c-f3cf-8240",
+            "name": "Dmg"
+          },
+          {
+            "id": "a75e-caea-4e00-ec11",
+            "name": "Ability"
+          }
+        ]
+      },
+      {
+        "id": "d6e3-c330-54cd-1315",
+        "name": "Ranged Weapon",
+        "characteristicTypes": [
+          {
+            "id": "a95e-5faa-9498-f004",
+            "name": "Rng"
+          },
+          {
+            "id": "234c-5775-0e44-2630",
+            "name": "Atk"
+          },
+          {
+            "id": "3db9-5b77-716a-67d0",
+            "name": "Hit"
+          },
+          {
+            "id": "9e0a-a83a-60a5-b66a",
+            "name": "Wnd"
+          },
+          {
+            "id": "ce58-0f79-916a-7b2d",
+            "name": "Rnd"
+          },
+          {
+            "id": "73f7-f01e-31fa-3110",
+            "name": "Dmg"
+          },
+          {
+            "id": "578b-76b0-f8c2-7690",
+            "name": "Ability"
+          }
+        ]
+      },
+      {
+        "id": "b8a7-2a75-49f2-5ebf",
+        "name": "Ability (Activated)",
+        "characteristicTypes": [
+          {
+            "id": "b459-66b2-bfb5-88c9",
+            "name": "Timing"
+          },
+          {
+            "id": "5990-8220-eb4d-231e",
+            "name": "Cost"
+          },
+          {
+            "id": "08df-4326-4cd2-94d3",
+            "name": "Declare"
+          },
+          {
+            "id": "d6df-1c37-13f4-414b",
+            "name": "Effect"
+          },
+          {
+            "id": "48e7-a091-186f-3d89",
+            "name": "Keywords"
+          }
+        ]
+      },
+      {
+        "id": "3242-704e-a559-9242",
+        "name": "Ability (Passive)",
+        "characteristicTypes": [
+          {
+            "id": "ff88-605f-94a1-be72",
+            "name": "Effect"
+          },
+          {
+            "id": "76ca-c834-2c5c-b178",
+            "name": "Keywords"
+          }
+        ]
+      },
+      {
+        "id": "8c87-9d5c-e381-aa12",
+        "name": "Ability (Spell / Prayer)",
+        "characteristicTypes": [
+          {
+            "id": "010a-32e4-bfd1-7ecb",
+            "name": "Timing"
+          },
+          {
+            "id": "b16b-b0ee-9fbc-e044",
+            "name": "Value"
+          },
+          {
+            "id": "e949-67d2-ea72-a995",
+            "name": "Declare"
+          },
+          {
+            "id": "8f30-b5f7-2014-976b",
+            "name": "Effect"
+          },
+          {
+            "id": "c7c5-4969-f346-2a95",
+            "name": "Keywords"
+          }
+        ]
+      }
+    ],
+    "categoryEntries": [
+      {
+        "id": "42e5-89b7-39f5-c54b",
+        "name": "Configuration",
+        "hidden": false
+      },
+      {
+        "id": "c64e-e255-9117-75bc",
+        "name": "Army Composition",
+        "hidden": false
+      },
+      {
+        "id": "e0f8-c885-6cb0-a11f",
+        "name": "Order of Battle",
+        "hidden": false
+      },
+      {
+        "id": "e0df-a174-fd15-8c1f",
+        "name": "Manifestation Lore",
+        "hidden": false
+      },
+      {
+        "id": "ce3b-ef9c-9498-bf41",
+        "name": "Regiment of Renown",
+        "hidden": false
+      },
+      {
+        "id": "8053-a2ef-c942-7cdd",
+        "name": "Path to Glory Path",
+        "hidden": false
+      },
+      {
+        "id": "e5af-857d-36f1-e87b",
+        "name": "HERO",
+        "hidden": false
+      },
+      {
+        "id": "cd23-b747-351e-8bfa",
+        "name": "INFANTRY",
+        "hidden": false
+      },
+      {
+        "id": "461d-eef8-b0c5-f0b6",
+        "name": "CAVALRY",
+        "hidden": false
+      },
+      {
+        "id": "05b3-0968-2753-a09f",
+        "name": "BEAST",
+        "hidden": false
+      },
+      {
+        "id": "28d2-8b6e-8b12-0ef4",
+        "name": "MONSTER",
+        "hidden": false
+      },
+      {
+        "id": "579e-f329-5726-05f9",
+        "name": "WAR MACHINE",
+        "hidden": false
+      },
+      {
+        "id": "a2f4-127d-18b6-5bff",
+        "name": "MANIFESTATION",
+        "hidden": false
+      },
+      {
+        "id": "d9ea-e756-501c-7c53",
+        "name": "ENDLESS SPELL",
+        "hidden": false
+      },
+      {
+        "id": "dc04-3038-d16a-67d3",
+        "name": "FACTION TERRAIN",
+        "hidden": false
+      },
+      {
+        "id": "c7a0-dab2-f79f-5b95",
+        "name": "UNIQUE",
+        "hidden": false
+      },
+      {
+        "id": "40e2-3003-5d4d-4121",
+        "name": "WARMASTER",
+        "hidden": false
+      },
+      {
+        "id": "dade-f4fd-7474-4dde",
+        "name": "WIZARD",
+        "hidden": false
+      },
+      {
+        "id": "06b0-46b4-aed3-1b62",
+        "name": "PRIEST",
+        "hidden": false
+      },
+      {
+        "id": "380e-e93f-8f05-c8bb",
+        "name": "FLY",
+        "hidden": false
+      },
+      {
+        "id": "8fdf-edc4-a529-ac84",
+        "name": "CHAOS",
+        "hidden": false
+      },
+      {
+        "id": "b453-56d8-6f83-d317",
+        "name": "ORDER",
+        "hidden": false
+      },
+      {
+        "id": "875b-d17c-7573-3da4",
+        "name": "DEATH",
+        "hidden": false
+      },
+      {
+        "id": "0bd7-3d2a-1243-8a1e",
+        "name": "DESTRUCTION",
+        "hidden": false
+      },
+      {
+        "id": "80f9-2cee-10e5-0a5e",
+        "name": "SLAVES TO DARKNESS",
+        "hidden": false
+      },
+      {
+        "id": "fa30-c8ef-10a6-c7bc",
+        "name": "WARRIORS OF CHAOS",
+        "hidden": false
+      },
+      {
+        "id": "f2b4-a580-d88f-2446",
+        "name": "DARKOATH",
+        "hidden": false
+      },
+      {
+        "id": "a72e-8c6c-0869-6839",
+        "name": "DAEMON",
+        "hidden": false
+      },
+      {
+        "id": "3dc8-713b-f3ae-e2da",
+        "name": "Ruinous Champion",
+        "hidden": false
+      },
+      {
+        "id": "d43a-70a6-a267-2aeb",
+        "name": "Oathsworn",
+        "hidden": false
+      },
+      {
+        "id": "3f1e-b436-9a3b-74ea",
+        "name": "Standard Bearer",
+        "hidden": false
+      },
+      {
+        "id": "1d65-1f0c-23ee-f8da",
+        "name": "CITIES OF SIGMAR",
+        "hidden": false
+      },
+      {
+        "id": "68c3-061d-c3d6-2102",
+        "name": "DAUGHTERS OF KHAINE",
+        "hidden": false
+      },
+      {
+        "id": "074a-88a7-b6e7-2199",
+        "name": "FYRESLAYERS",
+        "hidden": false
+      },
+      {
+        "id": "ea8a-edb7-501c-4592",
+        "name": "IDONETH DEEPKIN",
+        "hidden": false
+      },
+      {
+        "id": "18c6-0a06-b298-250e",
+        "name": "KHARADRON OVERLORDS",
+        "hidden": false
+      },
+      {
+        "id": "4cfc-8f99-a81d-ba76",
+        "name": "LUMINETH REALM-LORDS",
+        "hidden": false
+      },
+      {
+        "id": "ffdc-f901-dd99-38fd",
+        "name": "SERAPHON",
+        "hidden": false
+      },
+      {
+        "id": "0d5c-4e06-85bb-15e1",
+        "name": "SYLVANETH",
+        "hidden": false
+      },
+      {
+        "id": "0fc9-2f75-8b25-5634",
+        "name": "STORMCAST ETERNALS",
+        "hidden": false
+      },
+      {
+        "id": "07b9-82fd-1647-9a20",
+        "name": "BLADES OF KHORNE",
+        "hidden": false
+      },
+      {
+        "id": "9a0c-ccbe-5c41-7c68",
+        "name": "DISCIPLES OF TZEENTCH",
+        "hidden": false
+      },
+      {
+        "id": "0a88-623c-16cd-0193",
+        "name": "MAGGOTKIN OF NURGLE",
+        "hidden": false
+      },
+      {
+        "id": "2b94-aaf7-8da2-1111",
+        "name": "HEDONITES OF SLAANESH",
+        "hidden": false
+      },
+      {
+        "id": "fb69-9181-3b00-33aa",
+        "name": "SKAVEN",
+        "hidden": false
+      },
+      {
+        "id": "08b0-86b9-f2fb-aec3",
+        "name": "HELSMITHS OF HASHUT",
+        "hidden": false
+      },
+      {
+        "id": "4a38-35a8-4bd0-5a72",
+        "name": "FLESH-EATER COURTS",
+        "hidden": false
+      },
+      {
+        "id": "f7ef-8262-e83c-abf5",
+        "name": "NIGHTHAUNT",
+        "hidden": false
+      },
+      {
+        "id": "b8c3-5abe-98f8-2ad5",
+        "name": "OSSIARCH BONEREAPERS",
+        "hidden": false
+      },
+      {
+        "id": "94a5-ceed-28c4-a7c2",
+        "name": "SOULBLIGHT GRAVELORDS",
+        "hidden": false
+      },
+      {
+        "id": "790e-ba0c-f670-5c86",
+        "name": "GLOOMSPITE GITZ",
+        "hidden": false
+      },
+      {
+        "id": "c436-0c1d-175e-67bf",
+        "name": "IRONJAWZ",
+        "hidden": false
+      },
+      {
+        "id": "f8cc-9d5b-ba0d-5477",
+        "name": "KRULEBOYZ",
+        "hidden": false
+      },
+      {
+        "id": "06df-f6ef-1c65-31d3",
+        "name": "OGOR MAWTRIBES",
+        "hidden": false
+      },
+      {
+        "id": "d4d3-7a16-971d-5482",
+        "name": "SONS OF BEHEMAT",
+        "hidden": false
+      }
+    ],
+    "sharedRules": [
+      {
+        "id": "d879-8019-2504-9b7e",
+        "name": "Crit (2 Hits)",
+        "description": "Scores 2 hits on a critical hit instead of 1."
+      },
+      {
+        "id": "c395-ba73-931f-0b07",
+        "name": "Crit (Auto-wound)",
+        "description": "Automatically wounds on a critical hit."
+      },
+      {
+        "id": "afd2-f3f9-4df9-3380",
+        "name": "Crit (Mortal)",
+        "description": "Inflicts mortal damage equal to weapon Damage on a critical hit and the attack sequence ends."
+      },
+      {
+        "id": "f11a-711a-1640-858c",
+        "name": "Companion",
+        "description": "Not affected by friendly abilities unless Companion weapons are explicitly specified."
+      },
+      {
+        "id": "99ab-906f-f3fc-1278",
+        "name": "Shoot in Combat",
+        "description": "Can make shooting attacks even while in combat."
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "id": "0791-3624-766f-c003",
+        "name": "Manifestation Lores: Free (Path to Glory / Narrative)",
+        "type": "upgrade",
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "e9ed-be81-b91a-e628",
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "d333-4d72-b76b-f010",
+            "name": "Configuration",
+            "primary": true,
+            "targetId": "42e5-89b7-39f5-c54b"
+          }
+        ]
+      },
+      {
+        "id": "8265-d10b-00d8-52e2",
+        "name": "Aethervoid Pendulum",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "6c17-b88d-bcfa-707e",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "9d99-5cb8-d3bd-5064",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          },
+          {
+            "id": "eb89-4774-89ec-de3a",
+            "name": "FLY",
+            "hidden": false,
+            "primary": false,
+            "targetId": "380e-e93f-8f05-c8bb"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Aethervoid Pendulum",
+            "id": "cd68-2808-a0d1-7ea2",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "8\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "6",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "7+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Slicing Arc",
+            "id": "a230-df92-90a8-a717",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Movement Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick up to 3 enemy units moved across or passed within 1/2 inch.",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Roll a dice for each target; on a 2+, inflict mortal damage equal to the roll.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, FLY, WARD (6+)",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "218b-2e3c-0263-9da2",
+        "name": "Chronomantic Cogs",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "8953-5b63-1bb9-a8e1",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "e747-cfea-ccdb-1037",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Chronomantic Cogs",
+            "id": "7f5c-9ffb-c6ff-23bb",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "-",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "6",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "7+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Increase Time Flow",
+            "id": "4d20-fd6c-a59f-249e",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly unit wholly within 12 inches.",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Add 1 to charge rolls for the target for the rest of the turn.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, WARD (6+)",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          },
+          {
+            "name": "Decrease Time Flow",
+            "id": "5274-7635-05aa-2740",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard wholly within 12 inches.",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Subtract 1 from hit rolls for attacks targeting that Wizard.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, WARD (6+)",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "84dc-6039-4443-708e",
+        "name": "Quicksilver Swords",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "c7cf-fb6a-7b3e-c363",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "e9c5-65db-0998-bb82",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          },
+          {
+            "id": "ffd8-de58-a77a-e8f6",
+            "name": "FLY",
+            "hidden": false,
+            "primary": false,
+            "targetId": "380e-e93f-8f05-c8bb"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Quicksilver Swords",
+            "id": "46d1-f127-8e56-cc3a",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "12\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "6",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "7+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Quicksilver Blades",
+            "id": "846b-261f-18e9-78e0",
+            "hidden": false,
+            "typeId": "efc5-2391-d26b-1c01",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {
+                "name": "Atk",
+                "$text": "6",
+                "typeId": "725f-6651-a0d6-fb39"
+              },
+              {
+                "name": "Hit",
+                "$text": "4+",
+                "typeId": "5f8d-d581-a1f2-3a03"
+              },
+              {
+                "name": "Wnd",
+                "$text": "3+",
+                "typeId": "97dd-480b-0b3d-31ba"
+              },
+              {
+                "name": "Rnd",
+                "$text": "1",
+                "typeId": "fa46-7896-faa6-ddbf"
+              },
+              {
+                "name": "Dmg",
+                "$text": "2",
+                "typeId": "50b7-706c-f3cf-8240"
+              },
+              {
+                "name": "Ability",
+                "$text": "Crit (2 Hits)",
+                "typeId": "a75e-caea-4e00-ec11"
+              }
+            ]
+          },
+          {
+            "name": "Dancing Blades",
+            "id": "7401-7b8e-011b-a8f5",
+            "hidden": false,
+            "typeId": "3242-704e-a559-9242",
+            "typeName": "Ability (Passive)",
+            "characteristics": [
+              {
+                "name": "Effect",
+                "$text": "Ward rolls cannot be made for damage inflicted by this Manifestation.",
+                "typeId": "ff88-605f-94a1-be72"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, FLY, WARD (6+)",
+                "typeId": "76ca-c834-2c5c-b178"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9944-9fd1-f183-c598",
+        "name": "Horrorghast",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "c86c-8b68-28c7-f1c5",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "ef48-1c02-380c-7af1",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          },
+          {
+            "id": "4f5f-8b9d-696e-1f1d",
+            "name": "FLY",
+            "hidden": false,
+            "primary": false,
+            "targetId": "380e-e93f-8f05-c8bb"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Horrorghast",
+            "id": "2d4c-b982-0925-4348",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "8\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "6",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "7+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Scream of Terror",
+            "id": "bc14-9594-9aa3-cd3b",
+            "hidden": false,
+            "typeId": "d6e3-c330-54cd-1315",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {
+                "name": "Rng",
+                "$text": "10\"",
+                "typeId": "a95e-5faa-9498-f004"
+              },
+              {
+                "name": "Atk",
+                "$text": "6",
+                "typeId": "234c-5775-0e44-2630"
+              },
+              {
+                "name": "Hit",
+                "$text": "4+",
+                "typeId": "3db9-5b77-716a-67d0"
+              },
+              {
+                "name": "Wnd",
+                "$text": "3+",
+                "typeId": "9e0a-a83a-60a5-b66a"
+              },
+              {
+                "name": "Rnd",
+                "$text": "2",
+                "typeId": "ce58-0f79-916a-7b2d"
+              },
+              {
+                "name": "Dmg",
+                "$text": "1",
+                "typeId": "73f7-f01e-31fa-3110"
+              },
+              {
+                "name": "Ability",
+                "$text": "Shoot in Combat, Anti-INFANTRY (+1 Rend)",
+                "typeId": "578b-76b0-f8c2-7690"
+              }
+            ]
+          },
+          {
+            "name": "Deathly Touch",
+            "id": "8953-50ce-ec87-76e1",
+            "hidden": false,
+            "typeId": "efc5-2391-d26b-1c01",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {
+                "name": "Atk",
+                "$text": "4",
+                "typeId": "725f-6651-a0d6-fb39"
+              },
+              {
+                "name": "Hit",
+                "$text": "4+",
+                "typeId": "5f8d-d581-a1f2-3a03"
+              },
+              {
+                "name": "Wnd",
+                "$text": "4+",
+                "typeId": "97dd-480b-0b3d-31ba"
+              },
+              {
+                "name": "Rnd",
+                "$text": "-",
+                "typeId": "fa46-7896-faa6-ddbf"
+              },
+              {
+                "name": "Dmg",
+                "$text": "1",
+                "typeId": "50b7-706c-f3cf-8240"
+              },
+              {
+                "name": "Ability",
+                "$text": "-",
+                "typeId": "a75e-caea-4e00-ec11"
+              }
+            ]
+          },
+          {
+            "name": "Horrifying Shriek",
+            "id": "5309-5fd6-0b10-fd14",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Shooting Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick an enemy unit targeted by shooting attacks.",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Target cannot use commands if dice roll is less than slain models.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, FLY, WARD (6+)",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "93f4-472b-51e7-7ead",
+        "name": "Lauchon the Soulseeker",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "b744-0ef3-bf45-a534",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "5740-baa4-3180-65a5",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          },
+          {
+            "id": "e421-0942-36c2-2d4a",
+            "name": "FLY",
+            "hidden": false,
+            "primary": false,
+            "targetId": "380e-e93f-8f05-c8bb"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Lauchon the Soulseeker",
+            "id": "6a5d-549b-2b49-9aee",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "12\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "10",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "7+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Traverse the Tides of Death",
+            "id": "130b-ddb3-ad15-82e8",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Movement Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Infantry Wizard Hero within 3 inches.",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Move this Manifestation and set up target within 3 inches, inflicting 1 mortal damage.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "CORE, MOVE, MANIFESTATION, ENDLESS SPELL, FLY, WARD (6+)",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "4c06-644e-334d-87d6",
+        "name": "Soulscream Bridge",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "01fe-223d-bc8b-411d",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "a69a-e332-2b5b-ddfb",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Soulscream Bridge",
+            "id": "f359-6c31-40c7-0c3c",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "-",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "7",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "6+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Deathly Passage",
+            "id": "702a-9061-b5e1-7190",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Movement Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly unit wholly within 6 inches of one part.",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up target wholly within 6 inches of the other part and >9 inches from enemies.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, WARD (6+)",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bf4c-a7fa-6887-da61",
+        "name": "Shards of Valagharr",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "4efd-9c09-be37-392c",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "11ea-b284-1bf7-d3ad",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          },
+          {
+            "id": "6534-181e-89f3-a551",
+            "name": "FLY",
+            "hidden": false,
+            "primary": false,
+            "targetId": "380e-e93f-8f05-c8bb"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Shards of Valagharr",
+            "id": "a323-274a-a8fa-2dac",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "8\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "6",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "7+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Phantasmal Translocation",
+            "id": "9e4f-be19-ef71-28dd",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Movement Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick one part of this Manifestation.",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up that part wholly within 9 inches of the other part and >3 inches from enemies.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, FLY, WARD (6+)",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1ee0-20e4-9d73-57fa",
+        "name": "Malevolent Maelstrom",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "ad81-2b97-59b6-5b1e",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "cbd6-c0c1-e5cd-98bb",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          },
+          {
+            "id": "12bd-3a36-0454-cab3",
+            "name": "FLY",
+            "hidden": false,
+            "primary": false,
+            "targetId": "380e-e93f-8f05-c8bb"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Malevolent Maelstrom",
+            "id": "b621-28bc-fd61-ab26",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "8\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "6",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "7+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Morbid Detonation",
+            "id": "3619-182a-a108-5796",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "End of Any Turn",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "If this Manifestation has 6 maelstrom points, pick units within 9 inches.",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Roll a dice for each target; on a 2+, inflict mortal damage equal to roll, then destroy.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, FLY, WARD (6+)",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1822-abd8-1526-5d49",
+        "name": "Purple Sun of Shyish",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "d604-4073-b902-51bc",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "61f5-0928-3b8b-c889",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          },
+          {
+            "id": "9a6b-803a-71c5-4179",
+            "name": "FLY",
+            "hidden": false,
+            "primary": false,
+            "targetId": "380e-e93f-8f05-c8bb"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Purple Sun of Shyish",
+            "id": "63b5-75ad-eef8-2246",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "8\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "6",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "7+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Pull of the Nadiri",
+            "id": "ae67-6c6c-afa2-3a46",
+            "hidden": false,
+            "typeId": "3242-704e-a559-9242",
+            "typeName": "Ability (Passive)",
+            "characteristics": [
+              {
+                "name": "Effect",
+                "$text": "Subtract 1 from save rolls for units within 3 inches.",
+                "typeId": "ff88-605f-94a1-be72"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, FLY, WARD (6+)",
+                "typeId": "76ca-c834-2c5c-b178"
+              }
+            ]
+          },
+          {
+            "name": "End-of-the-Line",
+            "id": "c519-4c49-5865-d753",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Movement Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick up to 3 enemy units passed across.",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Roll D3 for each target; on a 2+, inflict mortal damage equal to roll.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, FLY, WARD (6+)",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "d9bb-f598-e49c-6ee0",
+        "name": "Soulsnare Shackles",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "1920-3894-d8b3-2a48",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "d2f9-4810-cd51-8b41",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Soulsnare Shackles",
+            "id": "8176-9fd2-0870-5e06",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "-",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "6",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "6+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Ensnaring Soul-Drain",
+            "id": "131b-7879-5718-7eb9",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Movement Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick an enemy unit within 9 inches.",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Disable Fly and roll D3: inflict mortal damage and reduce Move.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, WARD (6+)",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ec89-3118-bff7-ac6a",
+        "name": "Suffocating Gravetide",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "cb74-6bca-c1f5-5300",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "e295-1a18-04ee-f7b9",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          },
+          {
+            "id": "f72a-0093-89c0-178b",
+            "name": "FLY",
+            "hidden": false,
+            "primary": false,
+            "targetId": "380e-e93f-8f05-c8bb"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Suffocating Gravetide",
+            "id": "6a7a-f346-291e-dc2a",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "8\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "6",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "7+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Pulled to the Grave",
+            "id": "6b41-b6a0-c4d4-950e",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Movement Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick an enemy unit passed across.",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Roll D3: on a 2+, inflict mortal damage and reduce Move.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, FLY, WARD (6+)",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "25a4-550c-07e2-dc75",
+        "name": "The Burning Head",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "b724-678d-6e08-859d",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "ff34-2966-6a01-08d9",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          },
+          {
+            "id": "050f-cd2e-424a-5659",
+            "name": "FLY",
+            "hidden": false,
+            "primary": false,
+            "targetId": "380e-e93f-8f05-c8bb"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "The Burning Head",
+            "id": "196e-754c-cf6d-89ae",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "12\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "6",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "6+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Flaming Skull",
+            "id": "e75c-b315-7479-26bb",
+            "hidden": false,
+            "typeId": "d6e3-c330-54cd-1315",
+            "typeName": "Ranged Weapon",
+            "characteristics": [
+              {
+                "name": "Rng",
+                "$text": "12\"",
+                "typeId": "a95e-5faa-9498-f004"
+              },
+              {
+                "name": "Atk",
+                "$text": "2D6",
+                "typeId": "234c-5775-0e44-2630"
+              },
+              {
+                "name": "Hit",
+                "$text": "4+",
+                "typeId": "3db9-5b77-716a-67d0"
+              },
+              {
+                "name": "Wnd",
+                "$text": "3+",
+                "typeId": "9e0a-a83a-60a5-b66a"
+              },
+              {
+                "name": "Rnd",
+                "$text": "1",
+                "typeId": "ce58-0f79-916a-7b2d"
+              },
+              {
+                "name": "Dmg",
+                "$text": "1",
+                "typeId": "73f7-f01e-31fa-3110"
+              },
+              {
+                "name": "Ability",
+                "$text": "Shoot in Combat",
+                "typeId": "578b-76b0-f8c2-7690"
+              }
+            ]
+          },
+          {
+            "name": "Blazing Fury",
+            "id": "739a-e875-1d60-300b",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Shooting Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Allocate 1 un-wardable damage to this Manifestation after shooting.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, FLY, WARD (6+)",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7808-cd7c-fd45-7c04",
+        "name": "Emerald Lifeswarm",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "eecc-c324-198c-bca8",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "cdb5-19a4-d272-1490",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          },
+          {
+            "id": "1e9b-e277-0bfb-82c3",
+            "name": "FLY",
+            "hidden": false,
+            "primary": false,
+            "targetId": "380e-e93f-8f05-c8bb"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Emerald Lifeswarm",
+            "id": "e335-7cae-57cd-0975",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "8\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "6",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "6+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Lifeswarm",
+            "id": "81ef-6481-c50b-b08e",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly unit within 6 inches.",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Heal (D3) the target unit.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, FLY, WARD (6+)",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "c3cc-cdfa-4e25-0c84",
+        "name": "Ravenak's Gnashing Jaws",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "f4e4-f105-4d52-e1c8",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "f319-95b2-b34e-33b0",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Ravenak's Gnashing Jaws",
+            "id": "6038-ada4-279d-63ac",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "8\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "6",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "7+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Gnashing Jaws",
+            "id": "e2d0-4a93-31f0-7f79",
+            "hidden": false,
+            "typeId": "efc5-2391-d26b-1c01",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {
+                "name": "Atk",
+                "$text": "4",
+                "typeId": "725f-6651-a0d6-fb39"
+              },
+              {
+                "name": "Hit",
+                "$text": "4+",
+                "typeId": "5f8d-d581-a1f2-3a03"
+              },
+              {
+                "name": "Wnd",
+                "$text": "3+",
+                "typeId": "97dd-480b-0b3d-31ba"
+              },
+              {
+                "name": "Rnd",
+                "$text": "1",
+                "typeId": "fa46-7896-faa6-ddbf"
+              },
+              {
+                "name": "Dmg",
+                "$text": "2",
+                "typeId": "50b7-706c-f3cf-8240"
+              },
+              {
+                "name": "Ability",
+                "$text": "-",
+                "typeId": "a75e-caea-4e00-ec11"
+              }
+            ]
+          },
+          {
+            "name": "Ravening Hunger",
+            "id": "a89f-d4b0-85ae-acd1",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Any Charge Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "If charged, pick an enemy unit within 1 inch.",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Roll 10 dice; each 5+ inflicts 1 mortal damage.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, WARD (6+)",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cb80-a811-1b4c-b3d5",
+        "name": "Geminids of Uhl-Gysh",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "ba95-f78e-0db8-33d6",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "8816-af2f-0574-0a2b",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          },
+          {
+            "id": "0430-f707-210c-ca29",
+            "name": "FLY",
+            "hidden": false,
+            "primary": false,
+            "targetId": "380e-e93f-8f05-c8bb"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Geminids of Uhl-Gysh",
+            "id": "65a3-ab04-a458-262a",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "8\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "6",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "7+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Tendrils of Light and Shadow",
+            "id": "ee76-f844-c6ac-7435",
+            "hidden": false,
+            "typeId": "3242-704e-a559-9242",
+            "typeName": "Ability (Passive)",
+            "characteristics": [
+              {
+                "name": "Effect",
+                "$text": "Enemy units within 3 inches cannot use commands.",
+                "typeId": "ff88-605f-94a1-be72"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, FLY, WARD (6+)",
+                "typeId": "76ca-c834-2c5c-b178"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "96eb-81dd-5a09-26eb",
+        "name": "Prismatic Palisade",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "807f-5483-bce7-b7eb",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "9c25-de50-981e-66c0",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Prismatic Palisade",
+            "id": "71b9-9d91-9ede-4744",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "-",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "6",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "6+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Blinding Light",
+            "id": "695c-10d4-83e2-a2f1",
+            "hidden": false,
+            "typeId": "3242-704e-a559-9242",
+            "typeName": "Ability (Passive)",
+            "characteristics": [
+              {
+                "name": "Effect",
+                "$text": "Blocks shooting attacks crossing this Manifestation from >12 inches.",
+                "typeId": "ff88-605f-94a1-be72"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, WARD (6+)",
+                "typeId": "76ca-c834-2c5c-b178"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "0e8e-558c-ff7d-e457",
+        "name": "Umbral Spellportal",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "ac2b-598c-3a84-a2bd",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "73a4-bd79-ccb1-dd80",
+            "name": "ENDLESS SPELL",
+            "hidden": false,
+            "primary": false,
+            "targetId": "d9ea-e756-501c-7c53"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Umbral Spellportal",
+            "id": "5478-1f3a-2aa6-dbc9",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "-",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "6",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "6+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "6+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Arcane Passage",
+            "id": "388d-22ee-0511-8974",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard within 6 inches of one part.",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Measure spell range and visibility from the other part.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, ENDLESS SPELL, WARD (6+)",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "0f04-73c9-9bbd-dccd",
+        "name": "Krondspine Incarnate of Ghur",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "e804-64e5-0988-8368",
+            "name": "MANIFESTATION",
+            "hidden": false,
+            "primary": true,
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "3306-ce2a-aef8-471d",
+            "name": "FLY",
+            "hidden": false,
+            "primary": false,
+            "targetId": "380e-e93f-8f05-c8bb"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Krondspine Incarnate of Ghur",
+            "id": "b28e-abe4-7e64-665f",
+            "hidden": false,
+            "typeId": "b25b-4b84-ca43-bd58",
+            "typeName": "Unit",
+            "characteristics": [
+              {
+                "name": "Move",
+                "$text": "8\"",
+                "typeId": "b10d-8fa9-3777-07d7"
+              },
+              {
+                "name": "Health",
+                "$text": "14",
+                "typeId": "8cfc-09eb-7e48-4c07"
+              },
+              {
+                "name": "Save",
+                "$text": "4+",
+                "typeId": "733e-c6e3-c6a3-3267"
+              },
+              {
+                "name": "Control",
+                "$text": "-",
+                "typeId": "ec0c-6567-bc09-2e6f"
+              },
+              {
+                "name": "Banishment",
+                "$text": "7+",
+                "typeId": "0d5c-5238-a4f3-b5a4"
+              }
+            ]
+          },
+          {
+            "name": "Amberbone Claws and Fangs",
+            "id": "eedb-3bfb-fec7-01e3",
+            "hidden": false,
+            "typeId": "efc5-2391-d26b-1c01",
+            "typeName": "Melee Weapon",
+            "characteristics": [
+              {
+                "name": "Atk",
+                "$text": "6",
+                "typeId": "725f-6651-a0d6-fb39"
+              },
+              {
+                "name": "Hit",
+                "$text": "4+",
+                "typeId": "5f8d-d581-a1f2-3a03"
+              },
+              {
+                "name": "Wnd",
+                "$text": "2+",
+                "typeId": "97dd-480b-0b3d-31ba"
+              },
+              {
+                "name": "Rnd",
+                "$text": "2",
+                "typeId": "fa46-7896-faa6-ddbf"
+              },
+              {
+                "name": "Dmg",
+                "$text": "3",
+                "typeId": "50b7-706c-f3cf-8240"
+              },
+              {
+                "name": "Ability",
+                "$text": "Anti-MANIFESTATION (+1 Rend)",
+                "typeId": "a75e-caea-4e00-ec11"
+              }
+            ]
+          },
+          {
+            "name": "Wild Form",
+            "id": "b51d-25d3-ab70-3213",
+            "hidden": false,
+            "typeId": "3242-704e-a559-9242",
+            "typeName": "Ability (Passive)",
+            "characteristics": [
+              {
+                "name": "Effect",
+                "$text": "When banished, allocate 6 un-wardable damage instead of removing.",
+                "typeId": "ff88-605f-94a1-be72"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, FLY",
+                "typeId": "76ca-c834-2c5c-b178"
+              }
+            ]
+          },
+          {
+            "name": "Devourer of Magics",
+            "id": "3c09-ae32-d4c7-42ae",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "End of Any Turn",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Heal (6) if it destroyed an enemy Manifestation this turn.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "MANIFESTATION, FLY",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "af2c-bdc3-1f97-9894",
+        "name": "Manifestation Lore: Aetherwrought Machineries",
+        "type": "upgrade",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "constraints": [
+          {
+            "id": "48d2-4730-5bff-54ea",
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "0536-1d8a-cd99-889a",
+            "name": "Manifestation Lore",
+            "primary": true,
+            "targetId": "e0df-a174-fd15-8c1f"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Summon Aethervoid Pendulum",
+            "id": "9f7c-03f3-4a62-dd77",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "6",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          },
+          {
+            "name": "Summon Chronomantic Cogs",
+            "id": "13f1-76f0-34b1-c37f",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "6",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          },
+          {
+            "name": "Summon Quicksilver Swords",
+            "id": "8a60-f081-3c25-0888",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "6",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [],
+        "entryLinks": [
+          {
+            "id": "fae8-4dc8-107a-abe6",
+            "name": "Aethervoid Pendulum",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "8265-d10b-00d8-52e2",
+            "constraints": [
+              {
+                "id": "b3f8-80ac-a4f9-3924",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "45ed-04bc-05ee-b1e9",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          },
+          {
+            "id": "ce4d-bb69-9992-291b",
+            "name": "Chronomantic Cogs",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "218b-2e3c-0263-9da2",
+            "constraints": [
+              {
+                "id": "c436-54fe-f253-e24c",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "ccec-1dfd-f6a4-8a74",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          },
+          {
+            "id": "8128-d561-e4e3-724c",
+            "name": "Quicksilver Swords",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "84dc-6039-4443-708e",
+            "constraints": [
+              {
+                "id": "7419-9ca4-1cd9-caac",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "9dc6-9b47-05ce-7527",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          }
+        ],
+        "modifiers": []
+      },
+      {
+        "id": "b520-e86a-56f5-42cd",
+        "name": "Manifestation Lore: Forbidden Power",
+        "type": "upgrade",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 20
+          }
+        ],
+        "constraints": [
+          {
+            "id": "72ae-9d95-93ba-6423",
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "2422-b2c8-19d5-9848",
+            "name": "Manifestation Lore",
+            "primary": true,
+            "targetId": "e0df-a174-fd15-8c1f"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Summon Horrorghast",
+            "id": "2c01-4e2e-5b25-312e",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "6",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          },
+          {
+            "name": "Summon Lauchon the Soulseeker",
+            "id": "7f11-4ff6-8f43-e360",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "6",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          },
+          {
+            "name": "Summon Soulscream Bridge",
+            "id": "a503-c4d2-1d46-a937",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "6",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          },
+          {
+            "name": "Summon Shards of Valagharr",
+            "id": "0ae8-e355-0b15-8ed9",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "6",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "id": "8ff6-937d-79bd-1497",
+            "name": "Free Lore Override (Path to Glory / Narrative - 0 pts)",
+            "type": "upgrade",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "2e78-2d6e-0e0c-2351",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "id": "25fc-e247-0e64-5b85",
+            "name": "Horrorghast",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "9944-9fd1-f183-c598",
+            "constraints": [
+              {
+                "id": "3b37-405a-f432-a8b3",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "d57e-6852-01c7-3f55",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          },
+          {
+            "id": "f20d-ce94-d674-e3d3",
+            "name": "Lauchon the Soulseeker",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "93f4-472b-51e7-7ead",
+            "constraints": [
+              {
+                "id": "6863-76af-7256-be7a",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "f732-2133-09bc-6171",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          },
+          {
+            "id": "a71d-21c2-de12-1828",
+            "name": "Soulscream Bridge",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "4c06-644e-334d-87d6",
+            "constraints": [
+              {
+                "id": "cdf3-5d0f-9f01-d30b",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "fa4a-55c4-66ec-453b",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          },
+          {
+            "id": "1faf-dfcd-5f87-d413",
+            "name": "Shards of Valagharr",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "bf4c-a7fa-6887-da61",
+            "constraints": [
+              {
+                "id": "0a2c-c8dd-a3bf-3ced",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "711b-2ff2-2e6b-b948",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "df1c-9cfa-2ada-6b99",
+            "type": "set",
+            "value": 0,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "8ff6-937d-79bd-1497",
+                    "field": "selections",
+                    "scope": "self",
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "0791-3624-766f-c003",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "198f-66cc-f09c-4567",
+        "name": "Manifestation Lore: Morbid Conjuration",
+        "type": "upgrade",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 20
+          }
+        ],
+        "constraints": [
+          {
+            "id": "169b-785c-8b1e-e519",
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "2e71-4cbe-6328-dcd9",
+            "name": "Manifestation Lore",
+            "primary": true,
+            "targetId": "e0df-a174-fd15-8c1f"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Summon Malevolent Maelstrom",
+            "id": "66a5-eda4-cd31-5534",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "6",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          },
+          {
+            "name": "Summon Purple Sun of Shyish",
+            "id": "5e06-5a39-60b2-bf55",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "7",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          },
+          {
+            "name": "Summon Soulsnare Shackles",
+            "id": "e46c-b5c2-338b-1767",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "6",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          },
+          {
+            "name": "Summon Suffocating Gravetide",
+            "id": "0960-c0e5-010e-223a",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "6",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "id": "d91a-fd7c-d642-d2fe",
+            "name": "Free Lore Override (Path to Glory / Narrative - 0 pts)",
+            "type": "upgrade",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "bed8-a08d-3d9b-7cdb",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "id": "ad38-2a4d-908b-283c",
+            "name": "Malevolent Maelstrom",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "1ee0-20e4-9d73-57fa",
+            "constraints": [
+              {
+                "id": "7183-6a73-ac13-2264",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "fc76-7f78-2dc4-1835",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          },
+          {
+            "id": "5909-0c3b-31bc-85ce",
+            "name": "Purple Sun of Shyish",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "1822-abd8-1526-5d49",
+            "constraints": [
+              {
+                "id": "beed-fbea-b870-2e94",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "98ae-01ad-4c69-0d79",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          },
+          {
+            "id": "e808-45d8-8601-b5da",
+            "name": "Soulsnare Shackles",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "d9bb-f598-e49c-6ee0",
+            "constraints": [
+              {
+                "id": "fe4b-4d9f-edf9-b98b",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "ebde-c00b-f751-318c",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          },
+          {
+            "id": "41b0-8302-0955-a141",
+            "name": "Suffocating Gravetide",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "ec89-3118-bff7-ac6a",
+            "constraints": [
+              {
+                "id": "66d1-df3a-230a-e10e",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "54ed-0dff-5762-6a3c",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "df1c-9cfa-2ada-6b99",
+            "type": "set",
+            "value": 0,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "d91a-fd7c-d642-d2fe",
+                    "field": "selections",
+                    "scope": "self",
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "0791-3624-766f-c003",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b688-3857-9ff8-974f",
+        "name": "Manifestation Lore: Primal Energy",
+        "type": "upgrade",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 10
+          }
+        ],
+        "constraints": [
+          {
+            "id": "b2cf-129d-bbcb-6f73",
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "83e8-4ef7-a1f2-653f",
+            "name": "Manifestation Lore",
+            "primary": true,
+            "targetId": "e0df-a174-fd15-8c1f"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Summon The Burning Head",
+            "id": "4bb9-799d-d41f-32b2",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "6",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          },
+          {
+            "name": "Summon Emerald Lifeswarm",
+            "id": "7d19-3257-5102-c488",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "6",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          },
+          {
+            "name": "Summon Ravenak's Gnashing Jaws",
+            "id": "42c7-938b-3980-4387",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "6",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "id": "8465-3db5-24b8-e07c",
+            "name": "Free Lore Override (Path to Glory / Narrative - 0 pts)",
+            "type": "upgrade",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "67cf-442f-fb7c-1353",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "id": "be83-df59-15b1-50a5",
+            "name": "The Burning Head",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "25a4-550c-07e2-dc75",
+            "constraints": [
+              {
+                "id": "274e-7cb6-9f77-1455",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "6c20-79c9-0345-7bd9",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          },
+          {
+            "id": "99f4-5fe6-29fc-5457",
+            "name": "Emerald Lifeswarm",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "7808-cd7c-fd45-7c04",
+            "constraints": [
+              {
+                "id": "42a6-a951-d22a-9b46",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "055d-bf2c-7211-d7d8",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          },
+          {
+            "id": "fcd1-848b-cf22-ee05",
+            "name": "Ravenak's Gnashing Jaws",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "c3cc-cdfa-4e25-0c84",
+            "constraints": [
+              {
+                "id": "7a4f-79a5-fc6a-8df3",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "0675-8dba-85af-ec43",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "df1c-9cfa-2ada-6b99",
+            "type": "set",
+            "value": 0,
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "childId": "8465-3db5-24b8-e07c",
+                    "field": "selections",
+                    "scope": "self",
+                    "type": "atLeast",
+                    "value": 1
+                  },
+                  {
+                    "childId": "0791-3624-766f-c003",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "scope": "roster",
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "406c-bdfe-a08e-62db",
+        "name": "Manifestation Lore: Twilit Sorceries",
+        "type": "upgrade",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "constraints": [
+          {
+            "id": "37e6-6c2b-287b-841f",
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "bb84-13b2-69af-7f2a",
+            "name": "Manifestation Lore",
+            "primary": true,
+            "targetId": "e0df-a174-fd15-8c1f"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Summon Geminids of Uhl-Gysh",
+            "id": "7819-1147-b45f-9813",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "6",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          },
+          {
+            "name": "Summon Prismatic Palisade",
+            "id": "e22b-0d3b-b368-31ae",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "6",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          },
+          {
+            "name": "Summon Umbral Spellportal",
+            "id": "f5bf-aa04-a0a2-3df8",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "6",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [],
+        "entryLinks": [
+          {
+            "id": "abbd-502e-c012-fcd0",
+            "name": "Geminids of Uhl-Gysh",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "cb80-a811-1b4c-b3d5",
+            "constraints": [
+              {
+                "id": "622b-d0bb-1cd4-b607",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "fad6-4b8c-94de-3fc5",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          },
+          {
+            "id": "5332-5a8c-6f84-8e44",
+            "name": "Prismatic Palisade",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "96eb-81dd-5a09-26eb",
+            "constraints": [
+              {
+                "id": "81f9-6f71-d16c-f52f",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "c44c-b2ff-a62a-eaa5",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          },
+          {
+            "id": "5f83-ffe4-0ee2-2266",
+            "name": "Umbral Spellportal",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "0e8e-558c-ff7d-e457",
+            "constraints": [
+              {
+                "id": "e9b9-3506-3df5-0061",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "eb5e-2b7c-87ca-885f",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          }
+        ],
+        "modifiers": []
+      },
+      {
+        "id": "10fe-1ef9-d9eb-89e1",
+        "name": "Manifestation Lore: Krondspine Incarnate",
+        "type": "upgrade",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 0
+          }
+        ],
+        "constraints": [
+          {
+            "id": "f9a1-24a6-df21-39f6",
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "a5bf-9f1f-34eb-5c01",
+            "name": "Manifestation Lore",
+            "primary": true,
+            "targetId": "e0df-a174-fd15-8c1f"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Summon Krondspine Incarnate of Ghur",
+            "id": "a48b-7d17-0eb8-1d77",
+            "hidden": false,
+            "typeId": "8c87-9d5c-e381-aa12",
+            "typeName": "Ability (Spell / Prayer)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Your Hero Phase",
+                "typeId": "010a-32e4-bfd1-7ecb"
+              },
+              {
+                "name": "Value",
+                "$text": "8",
+                "typeId": "b16b-b0ee-9fbc-e044"
+              },
+              {
+                "name": "Declare",
+                "$text": "Pick a friendly Wizard to cast this spell (2D6).",
+                "typeId": "e949-67d2-ea72-a995"
+              },
+              {
+                "name": "Effect",
+                "$text": "Set up the summoned Manifestation wholly within 12 inches of the caster and >9 inches from enemies.",
+                "typeId": "8f30-b5f7-2014-976b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "Spell, Summon",
+                "typeId": "c7c5-4969-f346-2a95"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [],
+        "entryLinks": [
+          {
+            "id": "b2b4-57d8-e246-ae8c",
+            "name": "Krondspine Incarnate of Ghur",
+            "hidden": false,
+            "type": "selectionEntry",
+            "targetId": "0f04-73c9-9bbd-dccd",
+            "constraints": [
+              {
+                "id": "fc3f-6fc7-c25c-7df9",
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              },
+              {
+                "id": "5d4d-2750-0f3c-495d",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ]
+          }
+        ],
+        "modifiers": []
+      },
+      {
+        "id": "a21c-2f1c-e03c-69c3",
+        "name": "Regiment of Renown: Gotrek Gurnisson",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 360
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "de3b-3adb-abe1-7f28",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Gotrek Gurnisson)",
+            "id": "f445-ac73-fc96-1f66",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Order Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5ed2-782d-5beb-f08b",
+        "name": "Regiment of Renown: The Blacktalons",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 340
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "0905-04df-1177-b518",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Neave Blacktalon)",
+            "id": "e327-8dc4-9af6-1f11",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Order Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "f8a5-8169-2d39-12c1",
+        "name": "Regiment of Renown: Saviours of Cinderfall",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 270
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "242e-64cc-817e-6ef8",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Callis and Toll)",
+            "id": "f718-7195-30e1-9d80",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Order Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "572b-b0cf-814d-80df",
+        "name": "Regiment of Renown: Elthwin's Thorns",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 250
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "c4f2-bdec-19fc-5d2c",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Elthwin)",
+            "id": "8d6d-0a11-7e28-7ee2",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Order Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "f513-3da0-b8e3-9094",
+        "name": "Regiment of Renown: Fjori's Flamebearers",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 250
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "c51f-f0bc-1c82-030c",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Fjori)",
+            "id": "5361-7d16-4c4c-9eed",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Order Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b978-5c5c-771f-054f",
+        "name": "Regiment of Renown: Norgrimm's Rune Throng",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 300
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "8066-827b-ecab-6553",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Norgrimm)",
+            "id": "43a8-7a97-14db-5864",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Order Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "0cb3-ee04-2190-7cf1",
+        "name": "Regiment of Renown: Brand's Oathbound",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 210
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "2805-3db9-f242-6f3e",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Gunnar Brand)",
+            "id": "f5b3-08b0-92f9-6b09",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Chaos Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "eb9d-4838-32c2-3ded",
+        "name": "Regiment of Renown: Hargax's Pit-Beasts",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 240
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "d6c2-3038-6222-f792",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Hargax)",
+            "id": "34d2-e26a-9774-eaf5",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Chaos Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b25e-595f-1427-87cb",
+        "name": "Regiment of Renown: Goroan Scions",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 240
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "c30b-a25a-a9cf-bd33",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Ogroid Myrmidon)",
+            "id": "c220-b361-3c2e-1b0e",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Chaos Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "defb-d895-1a8a-6880",
+        "name": "Regiment of Renown: Lord Skaldior's Chosen",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 320
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "66b8-bc63-74d9-d3ed",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Lord Skaldior)",
+            "id": "2925-6f9d-c43e-4391",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Chaos Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "180d-4dd0-87b1-a773",
+        "name": "Regiment of Renown: The Coven of Thryx",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 270
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "1601-a69d-7af9-2219",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Thryx)",
+            "id": "b80f-9b87-b251-fc9b",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Chaos Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "4418-fa0b-315b-3994",
+        "name": "Regiment of Renown: Phulgoth's Shudderhood",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 240
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "0e7a-b6fb-d31b-f2d7",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Phulgoth)",
+            "id": "f35c-704f-7aae-916c",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Chaos Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "992b-7a3e-4a15-f943",
+        "name": "Regiment of Renown: Veremord's Shamblers",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 200
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "2dc8-10fb-a153-b22f",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Veremord)",
+            "id": "36a8-5c07-0f4f-9da4",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Death Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b9ed-2773-4342-73d9",
+        "name": "Regiment of Renown: The Sorrowmourn Choir",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 270
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "a210-c966-7f38-4fc1",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Lady Olynder)",
+            "id": "d936-285f-6409-42d4",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Death Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "c02d-a9ee-907b-f8b6",
+        "name": "Regiment of Renown: Liche's Hand",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 310
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "f519-d3b3-24ae-b2f1",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Arkhan retinue)",
+            "id": "9f34-f93e-6c92-f884",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Death Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1e0a-9f3f-2add-51f3",
+        "name": "Regiment of Renown: Braggit's Bottle-snatchaz",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 200
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "b593-142c-065b-7d22",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Braggit)",
+            "id": "1f5e-1742-9ead-db49",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Destruction Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "8c08-e0ba-1f7c-25c3",
+        "name": "Regiment of Renown: Big Grikk's Kruleshots",
+        "type": "unit",
+        "hidden": false,
+        "import": true,
+        "costs": [
+          {
+            "name": "pts",
+            "typeId": "df1c-9cfa-2ada-6b99",
+            "value": 220
+          }
+        ],
+        "categoryLinks": [
+          {
+            "id": "5e35-0fc3-70fc-a200",
+            "name": "Regiment of Renown",
+            "primary": true,
+            "targetId": "ce3b-ef9c-9498-bf41"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Regiment Composition (Big Grikk)",
+            "id": "6d0b-3f45-a066-2192",
+            "hidden": false,
+            "typeId": "b8a7-2a75-49f2-5ebf",
+            "typeName": "Ability (Activated)",
+            "characteristics": [
+              {
+                "name": "Timing",
+                "$text": "Army Composition",
+                "typeId": "b459-66b2-bfb5-88c9"
+              },
+              {
+                "name": "Cost",
+                "$text": "-",
+                "typeId": "5990-8220-eb4d-231e"
+              },
+              {
+                "name": "Declare",
+                "$text": "-",
+                "typeId": "08df-4326-4cd2-94d3"
+              },
+              {
+                "name": "Effect",
+                "$text": "Destruction Regiment of Renown.",
+                "typeId": "d6df-1c37-13f4-414b"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "48e7-a091-186f-3d89"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "995d-757d-eb3f-1e2e",
+        "name": "Path of the Leader (Hero)",
+        "type": "upgrade",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "id": "98db-440a-0702-2582",
+            "name": "Path to Glory Path",
+            "primary": true,
+            "targetId": "8053-a2ef-c942-7cdd"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Path of the Leader (Hero)",
+            "id": "3cd6-3f2a-e13c-273c",
+            "hidden": false,
+            "typeId": "3242-704e-a559-9242",
+            "typeName": "Ability (Passive)",
+            "characteristics": [
+              {
+                "name": "Effect",
+                "$text": "Aspiring: Inspiring Leader | Elite: Coordinated Muster | Mighty: Titan of War | Legendary: Legendary Warlord",
+                "typeId": "ff88-605f-94a1-be72"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "76ca-c834-2c5c-b178"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "id": "45d8-b8a1-2b48-d2a3",
+            "name": "Progression Rank",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "140a-4193-4ecf-5a5f",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "id": "0530-a00a-02f2-eb31",
+                "name": "Rank: Aspiring",
+                "type": "upgrade",
+                "hidden": false
+              },
+              {
+                "id": "6384-8d45-508e-8734",
+                "name": "Rank: Elite",
+                "type": "upgrade",
+                "hidden": false
+              },
+              {
+                "id": "9655-10a4-3b3c-8bf5",
+                "name": "Rank: Mighty",
+                "type": "upgrade",
+                "hidden": false
+              },
+              {
+                "id": "bc7d-067f-5fac-f397",
+                "name": "Rank: Legendary",
+                "type": "upgrade",
+                "hidden": false
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "id": "a1a2-82d8-ed82-0f09",
+            "name": "Renown Point",
+            "type": "upgrade",
+            "hidden": false,
+            "costs": [
+              {
+                "name": "Renown",
+                "typeId": "4f86-086d-1024-4741",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "id": "b854-1380-9002-193f",
+            "name": "Battle Wound / Battle Scar",
+            "type": "upgrade",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "id": "29ed-0b8a-f3a8-3169",
+        "name": "Path of the Cavalier (Hero / Unit)",
+        "type": "upgrade",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "id": "b1c5-1dc7-7c2f-ad20",
+            "name": "Path to Glory Path",
+            "primary": true,
+            "targetId": "8053-a2ef-c942-7cdd"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Path of the Cavalier (Hero / Unit)",
+            "id": "16fb-0e1a-5cda-2e4b",
+            "hidden": false,
+            "typeId": "3242-704e-a559-9242",
+            "typeName": "Ability (Passive)",
+            "characteristics": [
+              {
+                "name": "Effect",
+                "$text": "Aspiring: Thunderous Charge | Elite: Swift Flankers | Mighty: Linebreakers | Legendary: Ride to Glory",
+                "typeId": "ff88-605f-94a1-be72"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "76ca-c834-2c5c-b178"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "id": "0ce0-5a5e-f12c-3683",
+            "name": "Progression Rank",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "724f-b4e9-2df2-1fb4",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "id": "2b3e-9ce5-5455-0e73",
+                "name": "Rank: Aspiring",
+                "type": "upgrade",
+                "hidden": false
+              },
+              {
+                "id": "c6ba-7ea8-9341-7730",
+                "name": "Rank: Elite",
+                "type": "upgrade",
+                "hidden": false
+              },
+              {
+                "id": "bc6e-c9a6-818c-09c0",
+                "name": "Rank: Mighty",
+                "type": "upgrade",
+                "hidden": false
+              },
+              {
+                "id": "554d-739b-d726-76d1",
+                "name": "Rank: Legendary",
+                "type": "upgrade",
+                "hidden": false
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "id": "99e4-7b81-4ace-2742",
+            "name": "Renown Point",
+            "type": "upgrade",
+            "hidden": false,
+            "costs": [
+              {
+                "name": "Renown",
+                "typeId": "4f86-086d-1024-4741",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "id": "3338-085c-1549-3dc9",
+            "name": "Battle Wound / Battle Scar",
+            "type": "upgrade",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "id": "0459-0121-9a97-87b3",
+        "name": "Path of the Mage / Priest (Hero)",
+        "type": "upgrade",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "id": "7145-038c-f60a-0e5e",
+            "name": "Path to Glory Path",
+            "primary": true,
+            "targetId": "8053-a2ef-c942-7cdd"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Path of the Mage / Priest (Hero)",
+            "id": "e759-d674-50f0-8f99",
+            "hidden": false,
+            "typeId": "3242-704e-a559-9242",
+            "typeName": "Ability (Passive)",
+            "characteristics": [
+              {
+                "name": "Effect",
+                "$text": "Aspiring: Arcane Conduit | Elite: Eldritch Ward | Mighty: Master of Sorcery | Legendary: Ascendant Caster",
+                "typeId": "ff88-605f-94a1-be72"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "76ca-c834-2c5c-b178"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "id": "1f3a-04a3-ff5c-89a4",
+            "name": "Progression Rank",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "ae41-4d15-7203-9356",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "id": "c332-22da-b5aa-67d0",
+                "name": "Rank: Aspiring",
+                "type": "upgrade",
+                "hidden": false
+              },
+              {
+                "id": "d09b-8780-5d12-ddf8",
+                "name": "Rank: Elite",
+                "type": "upgrade",
+                "hidden": false
+              },
+              {
+                "id": "2324-7416-c0ce-9cda",
+                "name": "Rank: Mighty",
+                "type": "upgrade",
+                "hidden": false
+              },
+              {
+                "id": "7a66-ba50-5832-adb2",
+                "name": "Rank: Legendary",
+                "type": "upgrade",
+                "hidden": false
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "id": "5196-bde4-e251-d6ed",
+            "name": "Renown Point",
+            "type": "upgrade",
+            "hidden": false,
+            "costs": [
+              {
+                "name": "Renown",
+                "typeId": "4f86-086d-1024-4741",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "id": "e20f-f703-9e85-a46c",
+            "name": "Battle Wound / Battle Scar",
+            "type": "upgrade",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "id": "a772-49f2-260f-3f00",
+        "name": "Path of the Warrior (Unit)",
+        "type": "upgrade",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "id": "4fb5-d959-6f1c-3faf",
+            "name": "Path to Glory Path",
+            "primary": true,
+            "targetId": "8053-a2ef-c942-7cdd"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Path of the Warrior (Unit)",
+            "id": "1601-6573-4c15-2bc2",
+            "hidden": false,
+            "typeId": "3242-704e-a559-9242",
+            "typeName": "Ability (Passive)",
+            "characteristics": [
+              {
+                "name": "Effect",
+                "$text": "Aspiring: Veteran Fighters | Elite: Stalwart Defenders | Mighty: Relentless Assault | Legendary: Champions of the Realms",
+                "typeId": "ff88-605f-94a1-be72"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "76ca-c834-2c5c-b178"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "id": "783d-5839-25c9-ca4d",
+            "name": "Progression Rank",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "3eba-f5ac-dd7e-4f10",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "id": "e596-cecc-d4c0-9b28",
+                "name": "Rank: Aspiring",
+                "type": "upgrade",
+                "hidden": false
+              },
+              {
+                "id": "0fdd-3fb3-bd19-5716",
+                "name": "Rank: Elite",
+                "type": "upgrade",
+                "hidden": false
+              },
+              {
+                "id": "4923-cd57-1360-45cc",
+                "name": "Rank: Mighty",
+                "type": "upgrade",
+                "hidden": false
+              },
+              {
+                "id": "ce00-a9f1-b47f-1aa2",
+                "name": "Rank: Legendary",
+                "type": "upgrade",
+                "hidden": false
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "id": "22e0-ea23-50bc-bfb0",
+            "name": "Renown Point",
+            "type": "upgrade",
+            "hidden": false,
+            "costs": [
+              {
+                "name": "Renown",
+                "typeId": "4f86-086d-1024-4741",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "id": "de07-d247-855d-a81f",
+            "name": "Battle Wound / Battle Scar",
+            "type": "upgrade",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "id": "90ed-0e9b-cee0-d504",
+        "name": "Path of the Behemoth / Sentinel (Unit)",
+        "type": "upgrade",
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {
+            "id": "577e-a053-ad38-5435",
+            "name": "Path to Glory Path",
+            "primary": true,
+            "targetId": "8053-a2ef-c942-7cdd"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Path of the Behemoth / Sentinel (Unit)",
+            "id": "4f86-57c1-f230-993e",
+            "hidden": false,
+            "typeId": "3242-704e-a559-9242",
+            "typeName": "Ability (Passive)",
+            "characteristics": [
+              {
+                "name": "Effect",
+                "$text": "Aspiring: Unyielding Hide | Elite: Ground-shaking Stride | Mighty: Apex Predator | Legendary: Living Cataclysm",
+                "typeId": "ff88-605f-94a1-be72"
+              },
+              {
+                "name": "Keywords",
+                "$text": "-",
+                "typeId": "76ca-c834-2c5c-b178"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "id": "cd8b-c3b5-9b5a-d734",
+            "name": "Progression Rank",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "38a6-e021-9783-8341",
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "id": "5127-9056-e8a9-9170",
+                "name": "Rank: Aspiring",
+                "type": "upgrade",
+                "hidden": false
+              },
+              {
+                "id": "daa5-6603-b9c1-1cb5",
+                "name": "Rank: Elite",
+                "type": "upgrade",
+                "hidden": false
+              },
+              {
+                "id": "8ab3-4197-60ed-052d",
+                "name": "Rank: Mighty",
+                "type": "upgrade",
+                "hidden": false
+              },
+              {
+                "id": "dc5b-7862-75e5-58ff",
+                "name": "Rank: Legendary",
+                "type": "upgrade",
+                "hidden": false
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "id": "c25b-3c9e-699e-1b39",
+            "name": "Renown Point",
+            "type": "upgrade",
+            "hidden": false,
+            "costs": [
+              {
+                "name": "Renown",
+                "typeId": "4f86-086d-1024-4741",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "id": "46bd-8b92-8ff3-1fa5",
+            "name": "Battle Wound / Battle Scar",
+            "type": "upgrade",
+            "hidden": false
+          }
+        ]
+      }
+    ],
+    "entryLinks": [
+      {
+        "id": "7fd4-f1f3-517c-0991",
+        "name": "Manifestation Lores: Free (Path to Glory / Narrative)",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "0791-3624-766f-c003"
+      },
+      {
+        "id": "9c73-28d4-e8ff-41f8",
+        "name": "Aethervoid Pendulum",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "8265-d10b-00d8-52e2"
+      },
+      {
+        "id": "57fa-7a31-55df-1cfe",
+        "name": "Chronomantic Cogs",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "218b-2e3c-0263-9da2"
+      },
+      {
+        "id": "7396-24c9-94ee-35d4",
+        "name": "Quicksilver Swords",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "84dc-6039-4443-708e"
+      },
+      {
+        "id": "e92e-22b9-e244-1146",
+        "name": "Horrorghast",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "9944-9fd1-f183-c598"
+      },
+      {
+        "id": "3505-bed1-b0df-da1c",
+        "name": "Lauchon the Soulseeker",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "93f4-472b-51e7-7ead"
+      },
+      {
+        "id": "b2d6-5b51-d3fa-2881",
+        "name": "Soulscream Bridge",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "4c06-644e-334d-87d6"
+      },
+      {
+        "id": "2094-d7de-0f90-8542",
+        "name": "Shards of Valagharr",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "bf4c-a7fa-6887-da61"
+      },
+      {
+        "id": "f129-c22e-f068-a130",
+        "name": "Malevolent Maelstrom",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "1ee0-20e4-9d73-57fa"
+      },
+      {
+        "id": "a962-f069-02e4-e3ad",
+        "name": "Purple Sun of Shyish",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "1822-abd8-1526-5d49"
+      },
+      {
+        "id": "6616-f369-fecf-e3ec",
+        "name": "Soulsnare Shackles",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "d9bb-f598-e49c-6ee0"
+      },
+      {
+        "id": "d32e-8927-defd-b3fc",
+        "name": "Suffocating Gravetide",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "ec89-3118-bff7-ac6a"
+      },
+      {
+        "id": "7ba5-7a62-355b-e070",
+        "name": "The Burning Head",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "25a4-550c-07e2-dc75"
+      },
+      {
+        "id": "0b80-ad76-dc2e-a377",
+        "name": "Emerald Lifeswarm",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "7808-cd7c-fd45-7c04"
+      },
+      {
+        "id": "265b-bff7-10db-25f9",
+        "name": "Ravenak's Gnashing Jaws",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "c3cc-cdfa-4e25-0c84"
+      },
+      {
+        "id": "0cd2-faff-c222-3b56",
+        "name": "Geminids of Uhl-Gysh",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "cb80-a811-1b4c-b3d5"
+      },
+      {
+        "id": "5933-3fc1-9688-54cd",
+        "name": "Prismatic Palisade",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "96eb-81dd-5a09-26eb"
+      },
+      {
+        "id": "beee-bf85-ad41-caca",
+        "name": "Umbral Spellportal",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "0e8e-558c-ff7d-e457"
+      },
+      {
+        "id": "296c-46a6-fc8d-a002",
+        "name": "Krondspine Incarnate of Ghur",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "0f04-73c9-9bbd-dccd"
+      },
+      {
+        "id": "e176-9ce7-73db-68ff",
+        "name": "Manifestation Lore: Aetherwrought Machineries",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "af2c-bdc3-1f97-9894"
+      },
+      {
+        "id": "1cfa-b7fb-d448-d871",
+        "name": "Manifestation Lore: Forbidden Power",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "b520-e86a-56f5-42cd"
+      },
+      {
+        "id": "2dad-a9d0-93a2-1f6f",
+        "name": "Manifestation Lore: Morbid Conjuration",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "198f-66cc-f09c-4567"
+      },
+      {
+        "id": "5d59-be54-8b8c-86e8",
+        "name": "Manifestation Lore: Primal Energy",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "b688-3857-9ff8-974f"
+      },
+      {
+        "id": "cf30-cb5e-642f-d939",
+        "name": "Manifestation Lore: Twilit Sorceries",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "406c-bdfe-a08e-62db"
+      },
+      {
+        "id": "792f-32b0-f798-45d6",
+        "name": "Manifestation Lore: Krondspine Incarnate",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "10fe-1ef9-d9eb-89e1"
+      },
+      {
+        "id": "22e4-d3a2-22c0-b95c",
+        "name": "Regiment of Renown: Gotrek Gurnisson",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "a21c-2f1c-e03c-69c3"
+      },
+      {
+        "id": "492c-7860-229e-7c87",
+        "name": "Regiment of Renown: The Blacktalons",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "5ed2-782d-5beb-f08b"
+      },
+      {
+        "id": "9c0f-8d93-0cfe-73eb",
+        "name": "Regiment of Renown: Saviours of Cinderfall",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "f8a5-8169-2d39-12c1"
+      },
+      {
+        "id": "8b95-2417-5263-06e5",
+        "name": "Regiment of Renown: Elthwin's Thorns",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "572b-b0cf-814d-80df"
+      },
+      {
+        "id": "e1f3-2292-b3d9-e943",
+        "name": "Regiment of Renown: Fjori's Flamebearers",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "f513-3da0-b8e3-9094"
+      },
+      {
+        "id": "afc7-118d-b123-7f97",
+        "name": "Regiment of Renown: Norgrimm's Rune Throng",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "b978-5c5c-771f-054f"
+      },
+      {
+        "id": "80c4-5403-3694-9c22",
+        "name": "Regiment of Renown: Brand's Oathbound",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "0cb3-ee04-2190-7cf1"
+      },
+      {
+        "id": "b37a-9f26-549b-a232",
+        "name": "Regiment of Renown: Hargax's Pit-Beasts",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "eb9d-4838-32c2-3ded"
+      },
+      {
+        "id": "db8e-1470-5785-690a",
+        "name": "Regiment of Renown: Goroan Scions",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "b25e-595f-1427-87cb"
+      },
+      {
+        "id": "d9aa-dafb-7fd9-8bf5",
+        "name": "Regiment of Renown: Lord Skaldior's Chosen",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "defb-d895-1a8a-6880"
+      },
+      {
+        "id": "dfcf-f026-d432-0b31",
+        "name": "Regiment of Renown: The Coven of Thryx",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "180d-4dd0-87b1-a773"
+      },
+      {
+        "id": "a0be-49ac-ce90-fb93",
+        "name": "Regiment of Renown: Phulgoth's Shudderhood",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "4418-fa0b-315b-3994"
+      },
+      {
+        "id": "2b49-678d-e80c-c5d7",
+        "name": "Regiment of Renown: Veremord's Shamblers",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "992b-7a3e-4a15-f943"
+      },
+      {
+        "id": "2776-6705-2dd0-068f",
+        "name": "Regiment of Renown: The Sorrowmourn Choir",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "b9ed-2773-4342-73d9"
+      },
+      {
+        "id": "91e1-a007-3e34-a5b4",
+        "name": "Regiment of Renown: Liche's Hand",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "c02d-a9ee-907b-f8b6"
+      },
+      {
+        "id": "2bf5-012f-0df0-71bd",
+        "name": "Regiment of Renown: Braggit's Bottle-snatchaz",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "1e0a-9f3f-2add-51f3"
+      },
+      {
+        "id": "28af-88c9-8f34-9366",
+        "name": "Regiment of Renown: Big Grikk's Kruleshots",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "8c08-e0ba-1f7c-25c3"
+      },
+      {
+        "id": "b83a-94e2-6f17-1fcb",
+        "name": "Path of the Leader (Hero)",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "995d-757d-eb3f-1e2e"
+      },
+      {
+        "id": "db6b-7cc1-7058-f9a9",
+        "name": "Path of the Cavalier (Hero / Unit)",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "29ed-0b8a-f3a8-3169"
+      },
+      {
+        "id": "a996-b17a-ac36-c775",
+        "name": "Path of the Mage / Priest (Hero)",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "0459-0121-9a97-87b3"
+      },
+      {
+        "id": "5df5-0b78-5f1b-5709",
+        "name": "Path of the Warrior (Unit)",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "a772-49f2-260f-3f00"
+      },
+      {
+        "id": "364f-26fc-8b3d-476d",
+        "name": "Path of the Behemoth / Sentinel (Unit)",
+        "hidden": false,
+        "type": "selectionEntry",
+        "targetId": "90ed-0e9b-cee0-d504"
+      }
+    ],
+    "forceEntries": [
+      {
+        "id": "2ab9-a01e-1588-0eeb",
+        "name": "Matched Play: General's Handbook",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "id": "43a3-a303-260e-df23",
+            "name": "Configuration",
+            "targetId": "42e5-89b7-39f5-c54b"
+          },
+          {
+            "id": "6caf-26d1-869a-93f0",
+            "name": "Army Composition",
+            "targetId": "c64e-e255-9117-75bc"
+          },
+          {
+            "id": "335a-9600-5863-0b0a",
+            "name": "Manifestation Lore",
+            "targetId": "e0df-a174-fd15-8c1f"
+          },
+          {
+            "id": "d54f-a89c-d72d-d7b3",
+            "name": "MANIFESTATION",
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "81df-df84-15f2-1c34",
+            "name": "Regiment of Renown",
+            "targetId": "ce3b-ef9c-9498-bf41"
+          },
+          {
+            "id": "ebad-0042-44c0-8023",
+            "name": "FACTION TERRAIN",
+            "targetId": "dc04-3038-d16a-67d3"
+          }
+        ],
+        "forceEntries": [
+          {
+            "id": "4fb5-780c-72d8-fc8f",
+            "name": "General's Regiment",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "b226-b535-8d08-3e95",
+                "type": "max",
+                "value": 1,
+                "field": "forces",
+                "scope": "parent"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "id": "1635-1f17-1341-87a9",
+                "name": "HERO",
+                "targetId": "e5af-857d-36f1-e87b",
+                "constraints": [
+                  {
+                    "id": "a0f9-4446-7e53-5925",
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force"
+                  },
+                  {
+                    "id": "9b5d-c41b-f71e-1b98",
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force"
+                  }
+                ]
+              },
+              {
+                "id": "5a6d-679f-287e-2093",
+                "name": "INFANTRY",
+                "targetId": "cd23-b747-351e-8bfa"
+              },
+              {
+                "id": "91e0-be0c-99bd-7a08",
+                "name": "CAVALRY",
+                "targetId": "461d-eef8-b0c5-f0b6"
+              },
+              {
+                "id": "b0e3-6024-5eb7-8e68",
+                "name": "BEAST",
+                "targetId": "05b3-0968-2753-a09f"
+              },
+              {
+                "id": "0d4b-5ec2-61ac-f6d7",
+                "name": "MONSTER",
+                "targetId": "28d2-8b6e-8b12-0ef4"
+              },
+              {
+                "id": "2251-bb88-f2f1-95ca",
+                "name": "WAR MACHINE",
+                "targetId": "579e-f329-5726-05f9"
+              }
+            ]
+          },
+          {
+            "id": "9606-5c03-f18b-772f",
+            "name": "Regiment",
+            "hidden": false,
+            "constraints": [
+              {
+                "id": "e052-7ed0-71e4-ff60",
+                "type": "max",
+                "value": 4,
+                "field": "forces",
+                "scope": "parent"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "id": "f3bc-c061-e2e9-89cb",
+                "name": "HERO",
+                "targetId": "e5af-857d-36f1-e87b",
+                "constraints": [
+                  {
+                    "id": "8772-6b80-5572-b5aa",
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force"
+                  },
+                  {
+                    "id": "0ac9-72a4-ad47-ed25",
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force"
+                  }
+                ]
+              },
+              {
+                "id": "2bd6-ba09-5fa4-b4b2",
+                "name": "INFANTRY",
+                "targetId": "cd23-b747-351e-8bfa"
+              },
+              {
+                "id": "6da6-9f86-5d58-d85e",
+                "name": "CAVALRY",
+                "targetId": "461d-eef8-b0c5-f0b6"
+              },
+              {
+                "id": "2264-e9cd-c3a3-8e52",
+                "name": "BEAST",
+                "targetId": "05b3-0968-2753-a09f"
+              },
+              {
+                "id": "73e0-c0f0-9b7a-f08e",
+                "name": "MONSTER",
+                "targetId": "28d2-8b6e-8b12-0ef4"
+              },
+              {
+                "id": "c2c8-81c2-57b1-8a2f",
+                "name": "WAR MACHINE",
+                "targetId": "579e-f329-5726-05f9"
+              }
+            ]
+          },
+          {
+            "id": "8cc2-4f2c-fa5f-88a0",
+            "name": "Auxiliary Units",
+            "hidden": false,
+            "categoryLinks": [
+              {
+                "id": "9a37-48b8-d3e1-722d",
+                "name": "HERO",
+                "targetId": "e5af-857d-36f1-e87b"
+              },
+              {
+                "id": "ebb7-e76e-b5de-5bea",
+                "name": "INFANTRY",
+                "targetId": "cd23-b747-351e-8bfa"
+              },
+              {
+                "id": "8190-52f5-08df-1485",
+                "name": "CAVALRY",
+                "targetId": "461d-eef8-b0c5-f0b6"
+              },
+              {
+                "id": "9e55-1368-fbfa-4c87",
+                "name": "BEAST",
+                "targetId": "05b3-0968-2753-a09f"
+              },
+              {
+                "id": "bf46-e9d6-f39e-9ad8",
+                "name": "MONSTER",
+                "targetId": "28d2-8b6e-8b12-0ef4"
+              },
+              {
+                "id": "82cb-fd9c-e4a4-939c",
+                "name": "WAR MACHINE",
+                "targetId": "579e-f329-5726-05f9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7779-4fb4-0780-9722",
+        "name": "Path to Glory: Ascension / Ravaged Coast",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "id": "f232-54cd-4c3d-1965",
+            "name": "Configuration",
+            "targetId": "42e5-89b7-39f5-c54b"
+          },
+          {
+            "id": "e35d-4c43-3260-0dae",
+            "name": "Army Composition",
+            "targetId": "c64e-e255-9117-75bc"
+          },
+          {
+            "id": "9e7f-0c5d-236e-aa75",
+            "name": "Order of Battle",
+            "targetId": "e0f8-c885-6cb0-a11f"
+          },
+          {
+            "id": "90bf-e1f3-9e80-fe63",
+            "name": "Manifestation Lore",
+            "targetId": "e0df-a174-fd15-8c1f"
+          },
+          {
+            "id": "1efe-196f-2ada-97c7",
+            "name": "MANIFESTATION",
+            "targetId": "a2f4-127d-18b6-5bff"
+          },
+          {
+            "id": "8a11-2646-4a17-cdc0",
+            "name": "Regiment of Renown",
+            "targetId": "ce3b-ef9c-9498-bf41"
+          },
+          {
+            "id": "9799-bd51-9c24-91b0",
+            "name": "Path to Glory Path",
+            "targetId": "8053-a2ef-c942-7cdd"
+          },
+          {
+            "id": "e6ff-d62e-96ff-d76a",
+            "name": "FACTION TERRAIN",
+            "targetId": "dc04-3038-d16a-67d3"
+          },
+          {
+            "id": "7445-694c-7ebb-249a",
+            "name": "HERO",
+            "targetId": "e5af-857d-36f1-e87b"
+          },
+          {
+            "id": "e4b4-d046-6b45-145f",
+            "name": "INFANTRY",
+            "targetId": "cd23-b747-351e-8bfa"
+          },
+          {
+            "id": "10d3-4dda-6efa-f522",
+            "name": "CAVALRY",
+            "targetId": "461d-eef8-b0c5-f0b6"
+          },
+          {
+            "id": "f652-15ee-e43e-fac9",
+            "name": "BEAST",
+            "targetId": "05b3-0968-2753-a09f"
+          },
+          {
+            "id": "eadf-4ede-3d84-b5eb",
+            "name": "MONSTER",
+            "targetId": "28d2-8b6e-8b12-0ef4"
+          },
+          {
+            "id": "2457-60ce-4a78-0c4d",
+            "name": "WAR MACHINE",
+            "targetId": "579e-f329-5726-05f9"
+          }
+        ]
+      }
+    ]
+  }
+}
